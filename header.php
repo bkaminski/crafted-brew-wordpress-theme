@@ -31,19 +31,18 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<?php
-				        wp_nav_menu( array(
-				            'theme_location'    => 'primary',
-				            'depth'             => 2,
-				            'container'         => '',
-				            'container_class'   => '',
-				            'container_id'      => '',
-				            'menu_class'        => 'navbar-nav mr-auto',
-				            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-				            'walker'            => new WP_Bootstrap_Navwalker())
-				    );
-				    ?>
-				    <form class="form-inline mt-2 mt-md-0">
-				    	<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+					wp_nav_menu( array(
+						'theme_location'    => 'primary',
+						'depth'             => 2,
+						'container'         => '',
+						'container_class'   => '',
+						'container_id'      => '',
+						'menu_class'        => 'navbar-nav mr-auto',
+						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'            => new WP_Bootstrap_Navwalker())
+					);?>
+					<form class="form-inline mt-2 mt-md-0">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 					</form>
 				</div>
