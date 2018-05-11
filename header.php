@@ -23,9 +23,9 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<nav class="navbar navbar-expand-md fixed-top justify-content-md">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png">
+				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png" alt="Blue Earl Brewing" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -38,11 +38,14 @@
 					'container' => '',
 					'container_class' => '',
 					'container_id' => '',
-					'menu_class' => 'navbar-nav mr-auto',
+					'menu_class' => 'navbar-nav mx-auto',
 					'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
 					'walker' => new WP_Bootstrap_Navwalker()
 				));
 				?>
+			</div>
+			<div class="logo my-2 my-lg-0">
+				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" />
 			</div>
 		</nav>
 		<header>
