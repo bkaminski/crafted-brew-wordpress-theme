@@ -44,7 +44,16 @@
 					));
 				?>
 			</div>
-			<div class="logo my-2 my-lg-0">
+			<div class="social-header my-2 my-lg-0">
+				<a href="https://www.facebook.com/blueearlbrewing/" class="" target="_blank">
+					<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2"></i>
+				</a>
+				<a href="https://twitter.com/blueearlbeer" class="" target="_blank">
+					<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2"></i>
+				</a>
+				<a href="https://www.instagram.com/blueearlbeer/?hl=en" class="" target="_blank">
+					<i class="fab fa-instagram fa-fw fa-lg text-white mr-5"></i>
+				</a>
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" />
 			</div>
 		</nav>
