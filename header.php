@@ -32,16 +32,16 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<?php
-				wp_nav_menu(array(
-					'theme_location' => 'primary',
-					'depth' => 2,
-					'container' => '',
-					'container_class' => '',
-					'container_id' => '',
-					'menu_class' => 'navbar-nav mx-auto',
-					'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-					'walker' => new WP_Bootstrap_Navwalker()
-				));
+					wp_nav_menu(array(
+						'theme_location' => 'primary',
+						'depth' => 2,
+						'container' => 'justify-content-md-center',
+						'container_class' => '',
+						'container_id' => '',
+						'menu_class' => 'navbar-nav mx-auto',
+						'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+						'walker' => new WP_Bootstrap_Navwalker()
+					));
 				?>
 			</div>
 			<div class="logo my-2 my-lg-0">

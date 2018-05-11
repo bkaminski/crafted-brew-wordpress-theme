@@ -95,8 +95,17 @@ padding: 0 4px 5px;
 
 .dropdown-menu {
 background-color: #324158;
-min-width: 20rem;
+min-width: 18rem;
 text-transform: none;
+text-align: center;
+}
+.nav-link {
+font-weight: bold;
+transition: 0.5s ease-in-out;
+}
+.nav-link:hover {
+transition: 0.5s ease-in-out;
+color: #dec328 !important;
 }
 .navbar-dark {
 text-transform: uppercase;
@@ -110,6 +119,7 @@ border: 2px solid #666 !important;
 border-color: #d3d4d9 !important;
 background: #ccc;
 }
+
 
 
 
