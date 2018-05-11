@@ -23,8 +23,10 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<nav class="navbar navbar-expand-md fixed-top">
-			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Company Name</a>
+		<nav class="navbar navbar-expand-md fixed-top justify-content-md">
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

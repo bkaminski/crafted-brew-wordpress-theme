@@ -8,7 +8,7 @@ function enqueue_crafted_brew_scripts()
         'jquery'
     ), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/js/all.js', false, null, null, false);
-    wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/js/craftedBrew.js', array(
+    wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array(
         'jquery'
     ), null, true, null);
 }
