@@ -9,3 +9,11 @@ License: GNU General Public License v3.0
 License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
 Text Domain: crafted_brew
 */
+
+
+/* Custom Styles */
+.beer-overflow {
+    width: 100%;
+    min-height: 500px;
+    border-bottom: 4px solid #5abfdd;
+}
