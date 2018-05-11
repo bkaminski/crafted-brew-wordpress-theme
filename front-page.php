@@ -7,6 +7,9 @@
 				<p class="text-center">Your browser may not support HTML5 video</p>
 				<span class="sr-only">Loading video of programmer typing code on a laptop.</span>
 			</video>
+			<div class="blue-earl-logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="img-fluid" alt="Blue Earl Brewing Company" />
+			</div>
 		</div>
 	</section>
 <?php get_footer(); ?>
