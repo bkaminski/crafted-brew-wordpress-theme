@@ -56,9 +56,6 @@
 				<a href="https://www.instagram.com/blueearlbeer/?hl=en" target="_blank">
 					<i class="fab fa-instagram fa-fw fa-lg text-white mr-5"></i>
 				</a>
-				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" />
+				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" class="img-fluid" />
 			</div>
 		</nav>
-		<header>
-			
-		</header>
