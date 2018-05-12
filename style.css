@@ -9,7 +9,10 @@ License: GNU General Public License v3.0
 License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
 Text Domain: crafted_brew
 */
-
+a:hover {
+color: #0056b3;
+text-decoration: none;
+}
 
 /* Custom Styles */
 .beer-overflow {
@@ -17,10 +20,6 @@ width: 100%;
 min-height: 500px;
 border-bottom: 4px solid #5abfdd;
 }
-.blue-earl-logo {
-
-}
-
 
 
 
@@ -102,12 +101,10 @@ text-align: center;
 .nav-link {
 font-weight: bold;
 transition: 0.5s ease-in-out;
-border: 2px solid transparent;
 }
 .nav-link:hover {
 transition: 0.5s ease-in-out;
 color: #dec328 !important;
-border: 2px solid #dec328;
 }
 .navbar-dark {
 text-transform: uppercase;
