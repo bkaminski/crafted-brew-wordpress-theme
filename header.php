@@ -37,7 +37,7 @@
 					wp_nav_menu(array(
 						'theme_location' => 'primary',
 						'depth' => 2,
-						'container' => 'justify-content-md-center',
+						'container' => '',
 						'container_class' => '',
 						'container_id' => '',
 						'menu_class' => 'navbar-nav mx-auto',
