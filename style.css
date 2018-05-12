@@ -1,6 +1,6 @@
 /*
 Theme Name: Crafted Brew WordPress Theme
-Theme URI: https://benkaminski.com
+Theme URI: https://github.com/bkaminski/crafted-brew-wordpress-theme
 Author: Ben Kaminski
 Author URI: https://benkaminski.com
 Description: Enter description here.
@@ -12,6 +12,10 @@ Text Domain: crafted_brew
 a:hover {
 color: #0056b3;
 text-decoration: none;
+}
+
+a:focus {
+color: #fff !important;
 }
 
 /* Custom Styles */
