@@ -118,6 +118,7 @@ white-space: nowrap;
 box-shadow: none;
 border: none;
 border-radius: 0px;
+font-size: 4vw;
 }
 a[aria-expanded="true"]{
 color: #dec328 !important;
@@ -144,15 +145,19 @@ border-color: #d3d4d9 !important;
 background: #ccc;
 }
 .navbar-collapse {
-background: #ccc;
-padding-left: 15px;
+background-color:rgba(0, 0, 0, 0.7);
+padding-left: 50px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 /* ========================= Media Queries ========================= */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-}
+.dropdown-menu {
+font-size: 3vw;
+}}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 #video-background {
@@ -168,6 +173,7 @@ text-align: center;
 white-space: nowrap;
 box-shadow: 2px 2px 4px #000;
 border: none;
+font-size: 1rem;
 }
 .main-logo-image {
 margin-top: -400px;
