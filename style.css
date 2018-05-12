@@ -97,6 +97,11 @@ background-color: #324158;
 text-transform: none;
 text-align: center;
 white-space: nowrap;
+box-shadow: 2px 2px 4px #000;
+border: none;
+}
+a[aria-expanded="true"]{
+color: #dec328 !important;
 }
 .nav-link {
 font-weight: bold;
