@@ -159,6 +159,10 @@ padding-bottom: 15px;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+.main-logo-image {
+margin-top: -270px;
+width: 250px;
+}
 .dropdown-menu {
 font-size: 3vw;
 }}
@@ -180,8 +184,8 @@ border: none;
 font-size: 1rem;
 }
 .main-logo-image {
-margin-top: -400px;
-width: 350px;
+margin-top: -350px;
+width: 300px;
 }}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
