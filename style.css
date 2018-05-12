@@ -94,9 +94,9 @@ padding: 0 4px 5px;
 
 .dropdown-menu {
 background-color: #324158;
-min-width: 18rem;
 text-transform: none;
 text-align: center;
+white-space: nowrap;
 }
 .nav-link {
 font-weight: bold;
