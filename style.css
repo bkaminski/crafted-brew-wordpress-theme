@@ -190,13 +190,13 @@ width: 300px;
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 .main-logo-image {
-margin-top: -500px;
+margin-top: -450px;
 width: 400px;
 }}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 .main-logo-image {
-margin-top: -600px;
+margin-top: -580px;
 }}
 
 /* ========================= End Media Queries ========================= */
