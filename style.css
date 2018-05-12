@@ -20,6 +20,9 @@ width: 100%;
 min-height: 500px;
 border-bottom: 4px solid #5abfdd;
 }
+.header-content {
+background-image: url('lib/img/video-poster.png');	
+}
 .main-logo-image {
 top:0;
 margin-top: -350px;
@@ -28,6 +31,9 @@ margin-left: auto;
 margin-right: auto;
 width: 250px;
 transition: 0.5s ease-in-out;
+}
+#video-background {
+visibility: hidden;
 }
 
 /* ========================= WordPress Image Classes ========================= */
@@ -136,6 +142,9 @@ background: #ccc;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+#video-background {
+visibility: visible;
+}
 .main-logo-image {
 margin-top: -400px;
 width: 350px;
