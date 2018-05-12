@@ -45,17 +45,17 @@
 						'walker' => new WP_Bootstrap_Navwalker()
 					));
 				?>
-			</div>
-			<div class="my-2 my-lg-0">
-				<a href="https://www.facebook.com/blueearlbrewing/" target="_blank">
-					<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2"></i>
-				</a>
-				<a href="https://twitter.com/blueearlbeer" target="_blank">
-					<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2"></i>
-				</a>
-				<a href="https://www.instagram.com/blueearlbeer/?hl=en" target="_blank">
-					<i class="fab fa-instagram fa-fw fa-lg text-white mr-5"></i>
-				</a>
-				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" class="img-fluid" />
+				<div id="socialIcons" class="my-2 my-lg-0">
+					<a href="https://www.facebook.com/blueearlbrewing/" target="_blank">
+						<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2"></i>
+					</a>
+					<a href="https://twitter.com/blueearlbeer" target="_blank">
+						<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2"></i>
+					</a>
+					<a href="https://www.instagram.com/blueearlbeer/?hl=en" target="_blank">
+						<i class="fab fa-instagram fa-fw fa-lg text-white mr-5"></i>
+					</a>
+					<img id="brewForYourSoul" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" class="img-fluid" />
+				</div>
 			</div>
 		</nav>
