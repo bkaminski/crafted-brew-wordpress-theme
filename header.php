@@ -30,7 +30,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png" alt="Blue Earl Brewing" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<i class="fas fa-bars fa-fw fa-3x text-white text-shadow hamburger"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<?php
@@ -45,15 +45,15 @@
 						'walker' => new WP_Bootstrap_Navwalker()
 					));
 				?>
-				<div id="socialIcons" class="my-2 my-lg-0">
+				<div class="pl-1 my-2 my-lg-0">
 					<a href="https://www.facebook.com/blueearlbrewing/" target="_blank">
-						<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2"></i>
+						<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2 text-shadow social-fa"></i>
 					</a>
 					<a href="https://twitter.com/blueearlbeer" target="_blank">
-						<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2"></i>
+						<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2 text-shadow social-fa"></i>
 					</a>
 					<a href="https://www.instagram.com/blueearlbeer/?hl=en" target="_blank">
-						<i class="fab fa-instagram fa-fw fa-lg text-white mr-5"></i>
+						<i class="fab fa-instagram fa-fw fa-lg text-white mr-5 text-shadow social-fa"></i>
 					</a>
 					<img id="brewForYourSoul" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brew-for-your-soul.png" alt="Brew For Your Soul" class="img-fluid" />
 				</div>

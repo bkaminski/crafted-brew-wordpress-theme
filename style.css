@@ -9,16 +9,40 @@ License: GNU General Public License v3.0
 License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
 Text Domain: crafted_brew
 */
+
 a:hover {
 color: #0056b3;
 text-decoration: none;
 }
-
 a:focus {
 color: #fff !important;
 }
 
 /* Custom Styles */
+#brewForYourSoul {
+float: right;
+padding-right: 15px;
+}
+.book-tour {
+height: 150px;
+background: #0c5282;
+}
+.hamburger {
+color: #fff;
+transition: 0.5s ease-in-out;
+}
+.hamburger:hover {
+color: #dec328 !important;
+transition: 0.5s ease-in-out;
+}
+.social-fa:hover {
+color: #dec328 !important;
+transition: 0.5s ease-in-out;
+}
+.social-fa {
+transition: 0.5s ease-in-out;
+color: #fff;
+}
 .text-shadow {
 text-shadow: 2px 2px 4px #000;
 }
@@ -27,23 +51,21 @@ box-shadow: 2px 2px 4px #000;
 }
 .beer-overflow {
 width: 100%;
-min-height: 400px;
-border-bottom: 4px solid #5abfdd;
+z-index: -1;
+min-height: 10px;
 }
 .header-content {
 background-image: url('lib/img/video-poster.png');
-background-repeat: no-repeat;	
-min-height: 500px;
+background-repeat: no-repeat;
+border-bottom: 4px solid #5abfdd;
+height: 420px;
 }
 .main-logo-image {
-top:0;
-margin-top: -270px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 250px;
+z-index: 999;
+width: 170px;
 transition: 0.5s ease-in-out;
 position: relative;
+margin-top: -140px;
 }
 #video-background {
 visibility: hidden;
@@ -113,17 +135,24 @@ margin: 0;
 padding: 0 4px 5px;
 }
 /* ========================= End WordPress Image Classes ========================= */
-
-
+/* hides hamburger outline focus */
+button:focus {
+outline: 0px dotted;
+outline: 0px auto -webkit-focus-ring-color;
+}
 .dropdown-menu {
 background-color: #324158;
 text-transform: none;
 text-align: center;
+border-top: 2px solid #dec328 !important;
+border-bottom: 2px solid #dec328 !important;
 white-space: nowrap;
 box-shadow: none;
 border: none;
 border-radius: 0px;
 font-size: 4vw;
+padding-left: 5px;
+padding-right: 5px;
 }
 a[aria-expanded="true"]{
 color: #dec328 !important;
@@ -147,14 +176,18 @@ font-size: 0.9rem;
 .navbar-dark .navbar-toggler {
 color: #666 !important;
 border: 2px solid #666 !important;
-border-color: #d3d4d9 !important;
-background: #ccc;
+border-color: transparent !important;
+background: transparent;
+margin-right: -20px;
 }
 .navbar-collapse {
 background-color:rgba(0, 0, 0, 0.7);
-padding-left: 50px;
 padding-top: 15px;
 padding-bottom: 15px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+padding-right: 0.5rem;
+padding-left: 0.5rem;
 }
 
 /* ========================= Media Queries ========================= */
@@ -162,18 +195,19 @@ padding-bottom: 15px;
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 .main-logo-image {
-margin-top: -270px;
+margin-top: -280px;
 width: 250px;
 }
 .navbar-expand-md .navbar-nav .nav-link {
-padding-right: 1rem;
-padding-left: 1rem;
-}
-.dropdown-menu {
-font-size: 3vw;
+padding-right: 0.5rem;
+padding-left: 0.5rem;
 }}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+#brewForYourSoul {
+float: none;
+padding-right: 0px;
+}
 #video-background {
 visibility: visible;
 }
@@ -192,6 +226,8 @@ white-space: nowrap;
 box-shadow: 2px 2px 4px #000;
 border: none;
 font-size: 1rem;
+border-top: 0px solid #dec328 !important;
+border-bottom: 0px solid #dec328 !important;
 }
 .main-logo-image {
 margin-top: -350px;
@@ -207,7 +243,7 @@ padding-right: 2rem;
 padding-left: 2rem;
 }
 .main-logo-image {
-margin-top: -450px;
+margin-top: -480px;
 width: 400px;
 }}
 /* Extra large devices (large desktops, 1200px and up) */
@@ -217,7 +253,7 @@ padding-right: 2.5rem;
 padding-left: 2.5rem;
 }
 .main-logo-image {
-margin-top: -580px;
+margin-top: -550px;
 }}
 
 /* ========================= End Media Queries ========================= */
