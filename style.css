@@ -19,13 +19,25 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.pf-1 {
+font-size: 1.2rem;
+transition: 0.3s ease-in-out;
+}
+.btn-1 {
+transition: 0.3s ease-in-out;
+}
 #brewForYourSoul {
 float: right;
 padding-right: 15px;
 }
+.gold-text {
+color: #dec328;
+}
 .book-tour {
-height: 150px;
+min-height: 100px;
 background: #0c5282;
+border-bottom: 4px solid #dec328;
+padding: 10px;
 }
 .hamburger {
 color: #fff;
@@ -52,20 +64,22 @@ box-shadow: 2px 2px 4px #000;
 .beer-overflow {
 width: 100%;
 z-index: -1;
-min-height: 10px;
+border-bottom: 4px solid #dec328;
 }
 .header-content {
 background-image: url('lib/img/video-poster.png');
 background-repeat: no-repeat;
-border-bottom: 4px solid #5abfdd;
-height: 420px;
+border-bottom: 4px solid #dec328;
+min-height: 424px;
+margin-bottom: 0px;
 }
-.main-logo-image {
-z-index: 999;
-width: 170px;
-transition: 0.5s ease-in-out;
-position: relative;
-margin-top: -140px;
+.blue-earl-logo {
+margin-top: 120px;
+width: 200px;
+position: absolute;
+left: 0;
+right: 0;
+transition: 0.4s ease-in-out;
 }
 #video-background {
 visibility: hidden;
@@ -140,6 +154,9 @@ button:focus {
 outline: 0px dotted;
 outline: 0px auto -webkit-focus-ring-color;
 }
+.btn {
+border-radius: 0px;
+}
 .dropdown-menu {
 background-color: #324158;
 text-transform: none;
@@ -194,10 +211,7 @@ padding-left: 0.5rem;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-.main-logo-image {
-margin-top: -280px;
-width: 250px;
-}
+
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 0.5rem;
 padding-left: 0.5rem;
@@ -211,12 +225,26 @@ padding-right: 0px;
 #video-background {
 visibility: visible;
 }
+.blue-earl-logo {
+margin-top: 120px;
+width: 300px;
+}
+.header-content {
+min-height: 420px;
+background-image: none;
+background-repeat: no-repeat;
+border-bottom: 0px solid #5abfdd;
+margin-bottom: -6px;
+}
 .navbar-collapse {
 background: transparent;
 }
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 0.5rem;
 padding-left: 0.5rem;
+}
+.pf-1 {
+font-size: 1.0rem;
 }
 .dropdown-menu {
 background-color: #324158;
@@ -228,23 +256,22 @@ border: none;
 font-size: 1rem;
 border-top: 0px solid #dec328 !important;
 border-bottom: 0px solid #dec328 !important;
-}
-.main-logo-image {
-margin-top: -350px;
-width: 300px;
 }}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 .navbar-dark .navbar-nav .nav-link {
 font-size: 1rem;
 }
+.pf-1 {
+font-size: 1.2rem;
+}
+.blue-earl-logo {
+margin-top: 150px;
+width: 350px;
+}
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 2rem;
 padding-left: 2rem;
-}
-.main-logo-image {
-margin-top: -480px;
-width: 400px;
 }}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -252,8 +279,9 @@ width: 400px;
 padding-right: 2.5rem;
 padding-left: 2.5rem;
 }
-.main-logo-image {
-margin-top: -550px;
+.blue-earl-logo {
+margin-top: 200px;
+width: 405px;
 }}
 
 /* ========================= End Media Queries ========================= */
