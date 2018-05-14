@@ -193,6 +193,10 @@ padding-right: 0px;
 .foot-info {
 font-size: 0.56rem;
 }
+.pad-adjust {
+padding-right: -15px !important;
+padding-left: -15px !important;
+}
 .car-img {
 margin-top: -150px;
 }

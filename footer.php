@@ -5,14 +5,15 @@
 						<div class="col-md-2">
 							<p class="text-white foot-info">Mon 3pm-9pm <br />Tue 3pm-9pm<br />Wed 3pm-10pm</p>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-2 p-0 toggle-padding">
 							<p class="text-white foot-info">Thu 12pm-10pm <br />Fri &amp; Sat 12pm-11pm<br />Sun 1pm-6pm</p>
 						</div>
 						<div class="col-md-4">
 							<p class="text-white foot-info">Address: 210 Artisan Dr, Smyrna, DE 19977<br />Email: socialmedia@blueearlbrewing.com<br />Phone: 302.653.2337 (BEER)</p>
 						</div>
 						<div class="col-md-4">
-							<p class="text-white foot-info">Blue Earl Brewing Company &copy; <?php echo date('Y'); ?><br />All Rights Reserved. Provided by:<br /><a target="_blank" href="https://benkaminski.com" class="social-fa">Benjamin Kaminski Consulting</a></p>
+							<p class="text-white foot-info">Blue Earl Brewing Company &copy; <?php echo date('Y'); ?><br />All Rights Reserved.
+							<br />Provided by: <a target="_blank" href="https://benkaminski.com" class="social-fa">Benjamin Kaminski Consulting</a></p>
 						</div>
 					</div>
 				</div>
