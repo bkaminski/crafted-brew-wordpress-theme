@@ -7,6 +7,7 @@
 				<li data-target="#carouselIndicators" data-slide-to="4"></li>
 				<li data-target="#carouselIndicators" data-slide-to="5"></li>
 				<li data-target="#carouselIndicators" data-slide-to="6"></li>
+				<li data-target="#carouselIndicators" data-slide-to="7"></li>
 			</ol>
 			<div class="carousel-inner" style="max-height:632px;">
 				<div class="carousel-item car-img active">
@@ -16,19 +17,22 @@
 					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-02.png" alt="Second slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-03.jpg" alt="Third slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-13.jpg" alt="Third slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-05.jpg" alt="Fourth slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-03.jpg" alt="Fourth slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-06.jpg" alt="Fifth slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-05.jpg" alt="Fifth slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-07.png" alt="Sixth slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-06.jpg" alt="Sixth slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-12.jpg" alt="Seventh slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-07.png" alt="Seventh slide">
+				</div>
+				<div class="carousel-item car-img">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-12.jpg" alt="Eighth slide">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
