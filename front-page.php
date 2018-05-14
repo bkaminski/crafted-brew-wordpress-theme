@@ -23,7 +23,7 @@
 				</div>
 			</div>	
 		</div>
-	<section>
+	</section>
 	<main>
 		<div class="container-lg">
 			<?php include get_template_directory() . '/lib/inc/blue-earl-carousel.php'; ?>
@@ -42,7 +42,7 @@
 				</div>
 			</div>	
 		</div>
-	<section>
+	</section>
 	<aside>
 		<div class="container-lg testimonail-outer">
 			<div class="container">

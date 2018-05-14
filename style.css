@@ -19,8 +19,16 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.foot-info {
+font-size: 3.5vw;
+}
+.footer-outer {
+background: #324158;
+min-height: 150px;
+}
 .testimonail-outer {
 background: #a18527;
+margin-bottom: -16px;
 }
 .testimonials {
 min-height: 100px;
@@ -165,7 +173,9 @@ padding-left: 0.5rem;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+.foot-info {
+font-size: 2.7vw;
+}
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 0.5rem;
 padding-left: 0.5rem;
@@ -175,6 +185,9 @@ padding-left: 0.5rem;
 #brewForYourSoul {
 float: none;
 padding-right: 0px;
+}
+.foot-info {
+font-size: 0.56rem;
 }
 #video-background {
 visibility: visible;
@@ -219,6 +232,9 @@ font-size: 1rem;
 .pf-1 {
 font-size: 1.2rem;
 }
+.foot-info {
+font-size: 0.8rem;
+}
 .blue-earl-logo {
 margin-top: 150px;
 width: 350px;
@@ -233,7 +249,9 @@ padding-left: 2rem;
 padding-right: 2.5rem;
 padding-left: 2.5rem;
 }
-
+.foot-info {
+font-size: 1rem;
+}
 .blue-earl-logo {
 margin-top: 200px;
 width: 405px;
