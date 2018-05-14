@@ -23,12 +23,13 @@ color: #fff !important;
 background: #a18527;
 }
 .testimonials {
-min-height: 500px;
+min-height: 100px;
 background-image: url('lib/img/blue-earl-cask-bg.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 padding: 20px;
+font-size: 3.5vw;
 }
 .pf-1 {
 font-size: 1.2rem;
