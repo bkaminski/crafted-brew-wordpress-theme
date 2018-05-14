@@ -28,7 +28,7 @@
 					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-07.png" alt="Sixth slide">
 				</div>
 				<div class="carousel-item car-img">
-					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-01.png" alt="Seventh slide">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-12.jpg" alt="Seventh slide">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
