@@ -35,7 +35,7 @@
 						<div class="input-group-prepend">
 							<label class="input-group-text"><i class="fas fa-at"></i></label>
 						</div>
-						<input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+						<input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
 						<div class="input-group-append">
 							<button class="btn btn-warning" type="button">Submit</button>
 						</div>
