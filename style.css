@@ -19,6 +19,9 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.car-img {
+margin-top: 0px;
+}
 .foot-info {
 font-size: 3.5vw;
 }
@@ -189,6 +192,9 @@ padding-right: 0px;
 }
 .foot-info {
 font-size: 0.56rem;
+}
+.car-img {
+margin-top: -150px;
 }
 #video-background {
 visibility: visible;
