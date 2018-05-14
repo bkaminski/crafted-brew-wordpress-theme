@@ -60,7 +60,9 @@
 				<div class="col pt-3">
 					<p class="text-center text-white text-uppercase">In partnership with Blue Earl Brewing</p>
 					<p class="text-center pb-4">
-						<img src="<?php echo get_template_directory_uri(); ?>/lib/img/central-de-blues-society.jpg" alt="Central Delaware Blues Society" />
+						<a href="https://centraldelawareblues.com/" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/lib/img/central-de-blues-society.jpg" alt="Central Delaware Blues Society" />
+						</a>
 					</p>
 				</div>
 			</div>
