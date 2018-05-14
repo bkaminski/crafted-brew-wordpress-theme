@@ -19,6 +19,17 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.testimonail-outer {
+background: #a18527;
+}
+.testimonials {
+min-height: 500px;
+background-image: url('lib/img/blue-earl-cask-bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+padding: 20px;
+}
 .pf-1 {
 font-size: 1.2rem;
 transition: 0.3s ease-in-out;
@@ -85,70 +96,7 @@ transition: 0.4s ease-in-out;
 visibility: hidden;
 }
 
-/* ========================= WordPress Image Classes ========================= */
-.alignnone {
-margin: 5px 20px 20px 0;
-}
-.aligncenter,
-div.aligncenter {
-display: block;
-margin: 5px auto 5px auto;
-}
-.alignright {
-float: right;
-margin: 5px 0 20px 20px;
-}
-.alignleft {
-float: left;
-margin: 5px 20px 20px 0;
-}
-a img.alignright {
-float: right;
-margin: 5px 0 20px 20px;
-}
-a img.alignnone {
-margin: 5px 20px 20px 0;
-}
-a img.alignleft {
-float: left;
-margin: 5px 20px 20px 0;
-}
-a img.aligncenter {
-display: block;
-margin-right: auto;
-margin-left: auto;
-}
-.wp-caption {
-max-width: 96%;
-padding: 5px 3px 10px;
-text-align: center;
-border: 1px solid #f0f0f0;
-background: #d3d4d9;
-}
-.wp-caption.alignnone {
-margin: 5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-margin: 5px 20px 20px 0;
-}
-.wp-caption.alignright {
-margin: 5px 0 20px 20px;
-}
-.wp-caption img {
-width: auto;
-max-width: 98.5%;
-height: auto;
-margin: 0;
-padding: 0;
-border: 0 none;
-}
-.wp-caption-text {
-font-size: 11px;
-line-height: 17px;
-margin: 0;
-padding: 0 4px 5px;
-}
-/* ========================= End WordPress Image Classes ========================= */
+
 /* hides hamburger outline focus */
 button:focus {
 outline: 0px dotted;
@@ -156,6 +104,11 @@ outline: 0px auto -webkit-focus-ring-color;
 }
 .btn {
 border-radius: 0px;
+}
+.btn-warning {
+color: #212529;
+background-color: #dec328;
+border-color: #ffc107;
 }
 .dropdown-menu {
 background-color: #324158;
@@ -279,6 +232,7 @@ padding-left: 2rem;
 padding-right: 2.5rem;
 padding-left: 2.5rem;
 }
+
 .blue-earl-logo {
 margin-top: 200px;
 width: 405px;
