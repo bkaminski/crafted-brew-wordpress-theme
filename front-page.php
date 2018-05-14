@@ -18,7 +18,7 @@
 						<p class="gold-text pt-4 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
 					</div>
 					<div class="col-md-3">
-						<a class="btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
 					</div>
 				</div>
 			</div>	
@@ -37,7 +37,7 @@
 						<p class="gold-text pt-4 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
 					</div>
 					<div class="col-md-3">
-						<a class="btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
 					</div>
 				</div>
 			</div>	
