@@ -19,6 +19,13 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.page-template-our-beer{
+background-image: url('lib/img/interior-bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: auto;
+}
 .car-img {
 margin-top: 0px;
 }
