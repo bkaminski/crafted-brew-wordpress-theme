@@ -15,13 +15,13 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="row mt-5">
-		<div class="col-md-4">
+		<div class="col-md-4 mb-4">
 			<?php the_post_thumbnail('full'); ?>
 		</div>
 		<div class="col-md-8 text-white">
 			<?php the_content(); ?>
 			<br />
-			<?php the_tags('Related Topics: ' , ', ', ''); ?>
+			<?php the_tags('Related: ' , ', ', ''); ?>
 		</div>
 	</div>
 	<?php endwhile; else : ?>

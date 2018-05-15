@@ -22,9 +22,10 @@ color: #fff !important;
 .our-beer {
 background-image: url('lib/img/our-beer-bg02.png');
 background-repeat: no-repeat;
-background-size: 100% 100%;
-min-height: 800px;
+background-size: 1200px 100%;
+min-height: 600px;
 padding: 20px;
+font-size: 1.2rem;
 }
 .page-template-our-beer{
 background-image: url('lib/img/interior-bg.png');
@@ -274,6 +275,10 @@ padding-left: 2rem;
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 2.5rem;
 padding-left: 2.5rem;
+}
+.our-beer {
+background-size: 100% 100%;
+min-height: 800px;
 }
 .foot-info {
 font-size: 1rem;
