@@ -19,15 +19,25 @@ color: #fff !important;
 }
 
 /* Custom Styles */
+.brewery {
+background-image: url('lib/img/brewery-bg02.png');
+background-repeat: no-repeat;
+background-size: 1200px 100%;
+min-height: 700px;
+padding: 20px;
+font-size: 1.2rem;
+margin-top: -10px;
+}
 .our-beer {
 background-image: url('lib/img/our-beer-bg02.png');
 background-repeat: no-repeat;
 background-size: 1200px 100%;
-min-height: 600px;
+min-height: 700px;
 padding: 20px;
 font-size: 1.2rem;
+margin-top: -10px;
 }
-.page-template-our-beer{
+.page-template-our-beer, .page-template-brewery {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-size: cover;
@@ -206,6 +216,12 @@ padding-left: 0.5rem;
 float: none;
 padding-right: 0px;
 }
+.our-beer, 
+.brewery {
+background-size: 100% 100%;
+min-height: 800px;
+margin-top: 15px;
+}
 .foot-info {
 font-size: 0.56rem;
 }
@@ -257,10 +273,15 @@ border-bottom: 0px solid #dec328 !important;
 font-size: 1rem;
 }
 .pf-1 {
-font-size: 1.2rem;
+font-
+size: 1.2rem;
 }
 .foot-info {
 font-size: 0.8rem;
+}
+.our-beer, 
+.brewery {
+margin-top: 0px;
 }
 .blue-earl-logo {
 margin-top: 150px;
@@ -275,10 +296,6 @@ padding-left: 2rem;
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 2.5rem;
 padding-left: 2.5rem;
-}
-.our-beer {
-background-size: 100% 100%;
-min-height: 800px;
 }
 .foot-info {
 font-size: 1rem;
