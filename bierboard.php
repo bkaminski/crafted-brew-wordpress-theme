@@ -1,24 +1,22 @@
 <?php
 /**
- * Template Name: Brewery Pages Template
+ * Template Name: Bierboard Template
  *
  * @package WordPress
  * @subpackage crafted-brew-wordpress-theme
  * 
  */
 get_header(); ?>
-<div class="container brewery">
+<div class="container bierboard">
 	<div class="row">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="col">
 			<h1 class="text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
 		</div>
 	</div>
-	<div class="row mt-5">
-		<div class="col-md-4 mb-4">
-			<?php the_post_thumbnail('full'); ?>
-		</div>
-		<div class="col-md-8 text-white">
+	<div class="row mt-3">
+		<div class="col-md-12 mb-4 text-white">
+			<h3 class="text-center text-white text-uppercase text-shadow">Bierboard</h3>
 			<?php the_content(); ?>
 			<br />
 			<?php the_tags('Related: ' , ', ', ''); ?>

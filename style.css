@@ -28,6 +28,15 @@ padding: 20px;
 font-size: 1.2rem;
 margin-top: -10px;
 }
+.bierboard {
+background-image: url('lib/img/brewery-bg02.png');
+background-repeat: no-repeat;
+background-size: 1200px 100%;
+min-height: 700px;
+padding: 20px;
+font-size: 1.2rem;
+margin-top: -10px;
+}
 .our-beer {
 background-image: url('lib/img/our-beer-bg02.png');
 background-repeat: no-repeat;
@@ -37,7 +46,9 @@ padding: 20px;
 font-size: 1.2rem;
 margin-top: -10px;
 }
-.page-template-our-beer, .page-template-brewery {
+.page-template-our-beer,
+.page-template-brewery,
+.page-template-bierboard {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-size: cover;
@@ -222,10 +233,13 @@ background-size: 100% 100%;
 min-height: 800px;
 margin-top: 15px;
 }
+.bierboard {
+margin-top: 0px;
+}
 .foot-info {
 font-size: 0.56rem;
 }
-.pad-adjust {
+.nopadding {
 padding-right: -15px !important;
 padding-left: -15px !important;
 }
@@ -279,7 +293,7 @@ size: 1.2rem;
 .foot-info {
 font-size: 0.8rem;
 }
-.our-beer, 
+.our-beer,
 .brewery {
 margin-top: 0px;
 }

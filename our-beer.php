@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Our Beer Page Layout
+ * Template Name: Our Beer Pages Template
  *
  * @package WordPress
  * @subpackage crafted-brew-wordpress-theme
