@@ -47,12 +47,21 @@ font-size: 1.2rem;
 margin-top: -10px;
 }
 .page-template-our-beer,
-.page-template-brewery,
+.page-template-brewery {
+background-image: url('lib/img/interior-bg.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
+width: 100%;
+height: auto;
+padding-top: 106px;
+}
 .page-template-bierboard {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
-background-size: cover;
 background-position: top left;
+background-attachment: fixed;
 width: 100%;
 height: auto;
 padding-top: 106px;
