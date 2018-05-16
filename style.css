@@ -52,6 +52,7 @@ margin-top: -10px;
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-size: cover;
+background-position: top left;
 width: 100%;
 height: auto;
 padding-top: 106px;
@@ -227,14 +228,12 @@ padding-left: 0.5rem;
 float: none;
 padding-right: 0px;
 }
-.our-beer, 
+.our-beer,
+.bierboard,
 .brewery {
 background-size: 100% 100%;
 min-height: 800px;
 margin-top: 15px;
-}
-.bierboard {
-margin-top: 0px;
 }
 .foot-info {
 font-size: 0.56rem;
@@ -294,6 +293,7 @@ size: 1.2rem;
 font-size: 0.8rem;
 }
 .our-beer,
+.bierboard,
 .brewery {
 margin-top: 0px;
 }
