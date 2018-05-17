@@ -30,7 +30,7 @@
 		</div>
 	</main>
 	<section>
-		<div class="container-fluid no-padding book-tour">
+		<div class="container-fluid book-tour">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
