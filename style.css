@@ -57,6 +57,7 @@ margin-top: -10px;
 }
 .page-template-our-beer,
 .page-template-blue-earl-events,
+.page-template-default,
 .page-template-brewery {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
@@ -163,6 +164,10 @@ transition: 0.4s ease-in-out;
 }
 #video-background {
 visibility: hidden;
+}
+.no-padding {
+padding-left: 0px !important;
+padding-right: 0px !important;
 }
 
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<header>
-		<div class="container-lg header-content">
+		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
 			<video autoplay="true" id="video-background" class="beer-overflow" muted="" plays-inline loop="true" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.mp4" type="video/mp4">
 				<!-- loading fallback -->
@@ -11,40 +11,40 @@
 		</div>
 	</header>
 	<section>
-		<div class="container-lg book-tour">
+		<div class="container-fluid book-tour">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<p class="gold-text pt-4 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
+						<p class="gold-text pt-3 text-uppercase pf-1">Delaware’s 7th microbrewery located in The Historic Town of Smyrna. Brewing extra special beer offerings!</p>
 					</div>
 					<div class="col-md-3">
-						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="about-us/">About Us</a>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</section>
 	<main>
-		<div class="container-lg">
+		<div class="container-fluid no-padding">
 			<?php include get_template_directory() . '/lib/inc/blue-earl-carousel.php'; ?>
 		</div>
 	</main>
 	<section>
-		<div class="container-lg book-tour">
+		<div class="container-fluid no-padding book-tour">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<p class="gold-text pt-4 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
+						<p class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
 					</div>
 					<div class="col-md-3">
-						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-2 btn-1 text-uppercase" href="#">Book Tour</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="#">Book Tour</a>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</section>
 	<aside>
-		<div class="container-lg testimonail-outer">
+		<div class="container-fluid no-padding testimonail-outer">
 			<div class="container">
 				<div class="testimonials">
 					<p class="text-center text-white text-shadow pb-3">"My favorite craft beer at my favorite brewery! And the entertainment they have....second to none!!! Their blues jam every month is not to be missed!"
