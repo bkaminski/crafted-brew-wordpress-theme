@@ -18,7 +18,7 @@
 						<p class="gold-text pt-3 text-uppercase pf-1">Delaware’s 7th microbrewery located in The Historic Town of Smyrna. Brewing extra special beer offerings!</p>
 					</div>
 					<div class="col-md-3">
-						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="about-us/">About Us</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="brewery/about-us/">About Us</a>
 					</div>
 				</div>
 			</div>	
