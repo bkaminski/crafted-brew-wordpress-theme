@@ -17,6 +17,26 @@ text-decoration: none;
 a:focus {
 color: #fff !important;
 }
+a {
+color: #333;
+transition: 0.3s ease-in-out;
+}
+a:hover {
+color: #fff;
+text-shadow: 2px 2px 4px #000;
+text-decoration: underline;
+transition: 0.3s ease-in-out;
+}
+a[rel="tag"] {
+color: #333;
+transition: 0.3s ease-in-out;
+}
+a[rel="tag"]:hover {
+color: #fff;
+text-shadow: 2px 2px 4px #000;
+text-decoration: underline;
+transition: 0.3s ease-in-out;
+}
 
 /* Custom Styles */
 .blue-earl-events {
@@ -58,7 +78,8 @@ margin-top: -10px;
 .page-template-our-beer,
 .page-template-blue-earl-events,
 .page-template-default,
-.page-template-brewery {
+.page-template-brewery,
+.tag {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-attachment: fixed;

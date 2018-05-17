@@ -26,7 +26,7 @@ get_header(); ?>
 			<main>
 				<?php the_content(); ?>
 				<br />
-				<?php the_tags('Related: ' , ', ', ''); ?>
+				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
 			</main>
 		</div>
 	</div>

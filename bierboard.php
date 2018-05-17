@@ -22,7 +22,7 @@ get_header(); ?>
 				<h3 class="text-center text-white text-uppercase text-shadow">Bierboard</h3>
 				<?php the_content(); ?>
 				<br />
-				<?php the_tags('Related: ' , ', ', ''); ?>
+				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
 			</main>
 		</div>
 	</div>
