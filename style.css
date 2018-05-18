@@ -37,7 +37,6 @@ text-shadow: 2px 2px 4px #000;
 text-decoration: underline;
 transition: 0.3s ease-in-out;
 }
-
 /* Custom Styles */
 .blue-earl-events {
 background-image: url('lib/img/events-bg02.png');
@@ -190,8 +189,9 @@ visibility: hidden;
 padding-left: 0px !important;
 padding-right: 0px !important;
 }
-
-
+.xtra-padding {
+padding-left: 13%;
+}
 /* hides hamburger outline focus */
 button:focus {
 outline: 0px dotted;
@@ -255,13 +255,14 @@ padding-bottom: 15px;
 padding-right: 0.5rem;
 padding-left: 0.5rem;
 }
-
 /* ========================= Media Queries ========================= */
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 .foot-info {
 font-size: 2.7vw;
+}
+.xtra-padding {
+padding-left: 28%;
 }
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 0.5rem;
@@ -365,6 +366,31 @@ font-size: 1rem;
 margin-top: 200px;
 width: 405px;
 }}
-
 /* ========================= End Media Queries ========================= */
 
+/* ========================= EME Plugin Overrides ========================= */
+table.fullcalendar td {
+padding: 5px !important;
+}
+table.fullcalendar tbody td {
+height: 5em;
+}
+table.fullcalendar {
+min-width: 630px;
+}
+table.fullcalendar td.eventless-today, 
+table.fullcalendar td.eventful-today, 
+div.eventless-today, 
+div.eventful-today {
+background-color: #dec328;
+height: auto;
+margin-top: 5px;
+margin-left: 5px;
+}
+table.eme-calendar-table td.eventful a,
+table.eme-calendar-table td.eventful-today a, 
+div.eventful-today a, 
+div.eventful a {
+font-weight: bold;
+color: #fff;
+}

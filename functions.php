@@ -4,13 +4,9 @@
 function enqueue_crafted_brew_scripts()
 {
     wp_enqueue_script('Ajax-Popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, null, true, null);
-    wp_enqueue_script('Bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array(
-        'jquery'
-    ), null, true, null);
+    wp_enqueue_script('Bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/js/all.js', false, null, null, false);
-    wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array(
-        'jquery'
-    ), null, true, null);
+    wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array('jquery'), null, true, null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_scripts');
 
@@ -30,6 +26,12 @@ add_theme_support('post-thumbnails');
 
 //Allow RSS Feeds
 add_theme_support('automatic-feed-links');
+
+//Disable posts -- for now
+function remove_posts_menu() {
+    remove_menu_page('edit.php');
+}
+add_action('admin_menu', 'remove_posts_menu');
 
 // add tag support to pages
 function tags_support_all()
