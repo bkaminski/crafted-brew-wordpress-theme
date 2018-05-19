@@ -270,8 +270,7 @@ padding-right: 0px;
 .our-beer,
 .bierboard,
 .blue-earl-events,
-.brewery,
-.error404 {
+.brewery {
 background-size: 100% 100%;
 min-height: 800px;
 margin-top: 15px;
@@ -336,8 +335,7 @@ font-size: 0.8rem;
 .our-beer,
 .bierboard,
 .blue-earl-events,
-.brewery,
-.error404 {
+.brewery {
 margin-top: 0px;
 }
 .blue-earl-logo {
