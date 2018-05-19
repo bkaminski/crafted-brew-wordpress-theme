@@ -3,20 +3,12 @@ Theme Name: Crafted Brew WordPress Theme
 Theme URI: https://github.com/bkaminski/crafted-brew-wordpress-theme
 Author: Ben Kaminski
 Author URI: https://benkaminski.com
-Description: Enter description here.
-Version: 0.1.2
+Description: WordPress Theme designed for a brewery or bar with custom functions for the Events Made Easy Plug-in as well as other features requested by the original client.
+Version: 0.2.1
 License: GNU General Public License v3.0
 License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
 Text Domain: crafted_brew
 */
-
-a:hover {
-color: #0056b3;
-text-decoration: none;
-}
-a:focus {
-color: #fff !important;
-}
 a {
 color: #333;
 transition: 0.3s ease-in-out;
@@ -78,7 +70,8 @@ margin-top: -10px;
 .page-template-blue-earl-events,
 .page-template-default,
 .page-template-brewery,
-.tag {
+.tag,
+.error404 {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -277,7 +270,8 @@ padding-right: 0px;
 .our-beer,
 .bierboard,
 .blue-earl-events,
-.brewery {
+.brewery,
+.error404 {
 background-size: 100% 100%;
 min-height: 800px;
 margin-top: 15px;
@@ -342,7 +336,8 @@ font-size: 0.8rem;
 .our-beer,
 .bierboard,
 .blue-earl-events,
-.brewery {
+.brewery,
+.error404 {
 margin-top: 0px;
 }
 .blue-earl-logo {
@@ -369,14 +364,39 @@ width: 405px;
 /* ========================= End Media Queries ========================= */
 
 /* ========================= EME Plugin Overrides ========================= */
+.prev-month {
+background-color: #dec328;
+padding-right: 0.7em;
+border: 1px solid #000;
+}
+.next-month {
+background-color: #dec328;
+padding-left: 0.7em;
+border: 1px solid #000;
+}
+.eme-calendar-full {
+background: #fff;
+background-image: url('lib/img/blue-earl-logo-trans.png');
+background-repeat: no-repeat;
+background-position: bottom;
+background-position-y: center;
+}
+.days-names {
+background: #333;
+color: #fff;
+}
+.month_name {
+background: #ccc;
+}
 table.fullcalendar td {
 padding: 5px !important;
 }
-table.fullcalendar tbody td {
-height: 5em;
-}
-table.fullcalendar {
-min-width: 630px;
+table.eme-calendar-table td.eventful a,
+table.eme-calendar-table td.eventful-today a, 
+div.eventful-today a, 
+div.eventful a {
+font-weight: bold;
+color: #333;
 }
 table.fullcalendar td.eventless-today, 
 table.fullcalendar td.eventful-today, 
@@ -387,10 +407,25 @@ height: auto;
 margin-top: 5px;
 margin-left: 5px;
 }
-table.eme-calendar-table td.eventful a,
-table.eme-calendar-table td.eventful-today a, 
-div.eventful-today a, 
-div.eventful a {
-font-weight: bold;
-color: #fff;
+table.fullcalendar tbody td {
+height: 100px;
+font-size: 1.1vw;
+}
+ul.eme-calendar-day-event {
+list-style-type: none;
+background: #17a2b8;
+padding-bottom: 8px;
+padding-top: 1px;
+}
+a.eventful {
+color: #000;
+}
+.eventless-pre,
+.eventless-post,
+.eventful-post {
+background: #ccc;
+}
+table.eme-calendar-table td.eventless-pre, 
+table.eme-calendar-table td.eventless-post {
+color: #333;
 }
