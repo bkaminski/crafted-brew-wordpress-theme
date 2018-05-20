@@ -427,3 +427,26 @@ table.eme-calendar-table td.eventless-pre,
 table.eme-calendar-table td.eventless-post {
 color: #333;
 }
+table.eme-calendar-table td.eventless-today {
+background-color: #dec328 !important;
+}
+
+body #preloader {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 999999999999999999999999;
+background: url("lib/img/beer-preloader.gif") 50% 50% no-repeat #fff;
+transition: 0.3s ease-in-out;
+}
+.loading-text {
+position: fixed;
+left: 0px;
+top: 20%;
+width: 100%;
+height: 100%;
+z-index: 999999999999999999999999;
+transition: 0.3s ease-in-out;
+}

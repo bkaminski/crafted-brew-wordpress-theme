@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+	<div id="preloader">
+		<p class="text-center loading-text h4">One Moment...</p>
+	</div>
 	<header>
 		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
