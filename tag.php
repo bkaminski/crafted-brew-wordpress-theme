@@ -14,15 +14,18 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="col-md-12 mb-4">
 			<main>
-				<h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_title(); ?></a></h1>
-					<div class="text-white">
-						<?php the_excerpt(); ?>
+				<h1>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+						<?php the_title(); ?>
 						
-					</div>
+					</a>
+				</h1>
+				<div class="text-white">
+					<?php the_excerpt(); ?>
+						
+				</div>
 				<hr />
 			</main>
-			<br />
 		</div>
 		<?php endwhile; else : ?>
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>

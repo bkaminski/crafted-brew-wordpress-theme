@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 	<div id="preloader">
-		<p class="text-center loading-text h4">One Moment...</p>
+		<p class="text-center text-white h5 loadtext">Blue Earl is loading...</p>
 	</div>
+
 	<header>
 		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
 			<video autoplay="true" id="video-background" class="beer-overflow" muted="" plays-inline loop="true" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.mp4" type="video/mp4">
-				<!-- loading fallback -->
-				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-white"></i>
 				<p class="text-center">Your browser may not support HTML5 video</p>
 				<span class="sr-only">Video of beer being poured into pint glass.</span>
 			</video>
