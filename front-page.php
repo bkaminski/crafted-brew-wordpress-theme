@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<div id="preloader">
-		<p class="text-center text-white h5 loadtext">Blue Earl is loading...</p>
+		<p class="text-center h5 loadtext">Blue Earl is loading...</p>
 	</div>
 
 	<header>
@@ -39,7 +39,7 @@
 						<p class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
 					</div>
 					<div class="col-md-3">
-						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="#">Book Tour</a>
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="/blue-earl-brewing/brewery-tours/">Book Tour</a>
 					</div>
 				</div>
 			</div>	

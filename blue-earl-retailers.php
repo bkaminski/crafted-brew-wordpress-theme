@@ -20,6 +20,8 @@ get_header(); ?>
 		<div class="col-md-12 mb-4">
 			<main>
 				<?php the_content(); ?>
+				<br />
+				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
 			
 			</main>
 			<br />

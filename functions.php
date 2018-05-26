@@ -18,6 +18,14 @@ function enqueue_crafted_brew_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
 
+//Load Smooth Scroll only on post pages
+function sscroll_post_page() {
+    if ( is_page('287') )
+{
+    wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/lib/js/sscroll.min.js', array('jquery'), null, true, null );
+}}
+add_action('wp_enqueue_scripts', 'sscroll_post_page');
+
 //Hide admin bar from front of site
 show_admin_bar(false);
 
@@ -142,3 +150,74 @@ function crafted_brew_pagination($pages = '', $range = 1)
     }
 }
 //end pagination
+
+//Style login page logo
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/img/blue-earl-logo.png) !important;
+            background-size: contain !important;
+            width: 200px !important;
+            height: 210px !important
+        }
+        body {
+            
+        }
+        a:focus {
+            box-shadow: none;
+        }
+        .login form {
+            background: transparent;
+        }
+        .login form::before {
+            display: block;
+            content: "Website Administration Area";
+            margin-top: -20px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .login label {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        label[for=user_pass]:before {
+            content: "\f023 \2002";
+            font-family: FontAwesome;
+            color: #999;
+        }
+        label[for=user_login]:before {
+            content: "\f007 \2002";
+            font-family: FontAwesome;
+            color: #999;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Blue Earl Brewing';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+/* End Style Login */
+
+/* Kill Emojis */
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
+remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+remove_action( 'wp_head', 'wp_resource_hints', 2 );
+// Remove the REST API endpoint.
+remove_action('rest_api_init', 'wp_oembed_register_route');
+// Don't filter oEmbed results.
+remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+// Remove oEmbed discovery links.
+remove_action('wp_head', 'wp_oembed_add_discovery_links');
+// Remove oEmbed-specific JavaScript from the front-end and back-end.
+remove_action('wp_head', 'wp_oembed_add_host_js');

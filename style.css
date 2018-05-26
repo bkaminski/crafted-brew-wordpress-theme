@@ -12,6 +12,7 @@ Text Domain: crafted_brew
 a {
 color: #333;
 transition: 0.3s ease-in-out;
+word-wrap: break-word;
 }
 a:hover {
 color: #fff;
@@ -30,6 +31,21 @@ text-decoration: underline;
 transition: 0.3s ease-in-out;
 }
 /* Custom Styles */
+h2 a.sscroll-padding::before {
+display: block; 
+content: " "; 
+margin-top: -110px; 
+height: 110px; 
+visibility: hidden; 
+pointer-events: none;
+}
+.wfcookie {
+max-width:150px; 
+word-wrap: break-word;
+}
+.loadtext {
+margin-top: 20%;
+}
 .blue-earl-events {
 background-image: url('lib/img/events-bg02.png');
 background-repeat: no-repeat;
@@ -72,7 +88,8 @@ margin-top: -10px;
 .page-template-default,
 .page-template-brewery,
 .tag,
-.error404 {
+.error404,
+.wpsl_stores-template-default {
 background-image: url('lib/img/interior-bg.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -188,11 +205,14 @@ padding-left: 13%;
 }
 /* hides hamburger outline focus */
 button:focus {
-outline: 0px dotted;
-outline: 0px auto -webkit-focus-ring-color;
+outline: 0px dotted !important;
+outline: 0px auto -webkit-focus-ring-color !important;
 }
 .btn {
 border-radius: 0px;
+}
+.table-bordered td, .table-bordered th {
+border: 1px solid #333;
 }
 .btn-warning {
 color: #212529;
@@ -249,11 +269,21 @@ padding-bottom: 15px;
 padding-right: 0.5rem;
 padding-left: 0.5rem;
 }
+#wpsl-search-wrap .wpsl-input label,
+.radius-label {
+margin-right: 0;
+font-size: 5vw;
+}
 /* ========================= Media Queries ========================= */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 .foot-info {
 font-size: 2.7vw;
+}
+#wpsl-search-wrap .wpsl-input label,
+.radius-label {
+margin-right: 0;
+font-size: 2vw;
 }
 .xtra-padding {
 padding-left: 28%;
@@ -267,6 +297,11 @@ padding-left: 0.5rem;
 #brewForYourSoul {
 float: none;
 padding-right: 0px;
+}
+#wpsl-search-wrap .wpsl-input label,
+.radius-label {
+margin-right: 0;
+font-size: 1.7vw;
 }
 .our-beer,
 .bierboard,
@@ -311,7 +346,7 @@ padding-left: 0.5rem;
 font-size: 1.0rem;
 }
 .loadtext {
-margin-top: 72%;
+margin-top: 53%;
 }
 .dropdown-menu {
 background-color: #324158;
@@ -336,6 +371,11 @@ size: 1.2rem;
 .foot-info {
 font-size: 0.8rem;
 }
+#wpsl-search-wrap .wpsl-input label,
+.radius-label {
+margin-right: 0;
+font-size: 1.3vw;
+}
 .our-beer,
 .bierboard,
 .blue-earl-events,
@@ -347,7 +387,7 @@ margin-top: 150px;
 width: 350px;
 }
 .loadtext {
-margin-top: 55%;
+margin-top: 45%;
 }
 .navbar-expand-md .navbar-nav .nav-link {
 padding-right: 2rem;
@@ -360,7 +400,12 @@ padding-right: 2.5rem;
 padding-left: 2.5rem;
 }
 .loadtext {
-margin-top: 45%;
+margin-top: 35%;
+}
+#wpsl-search-wrap .wpsl-input label,
+.radius-label {
+margin-right: 0;
+font-size: 0.9vw;
 }
 .foot-info {
 font-size: 1rem;
@@ -376,6 +421,9 @@ width: 405px;
 background-color: #dec328;
 padding-right: 0.7em;
 border: 1px solid #000;
+}
+.eme-past-event {
+display: none;
 }
 .next-month {
 background-color: #dec328;
@@ -447,7 +495,7 @@ top: 0px;
 width: 100%;
 height: 100%;
 z-index: 999999999999;
-background: url("lib/img/blue-earl-preloader.gif") 50% 30% no-repeat #0c5282;
+background: url("lib/img/blue-earl-preloader.gif") 50% 30% no-repeat #fff;
 background-clip: padding-box;
 }
 /* Find Beer Page */
@@ -458,5 +506,36 @@ color: #fff;
 color: #000;
 }
 .wpsl-direction-wrap {
-background: #CCC;
+background-color: rgba(0, 0, 0, 0.7);
+padding-left: 15px;
+padding: 5px;
+color: #fff;
 }
+.wpsl-direction-wrap a {
+color: #fff;
+}
+#wpsl-search-btn {
+padding: 7px 10px;
+line-height: 1.428571429;
+font-weight: 400;
+color: #333;
+background-color: #dec328;
+background-repeat: none;
+background-image: none !important;
+box-shadow: none !important;
+text-transform: none !important;
+}
+#wpsl-search-btn, #wpsl-search-wrap input {
+border: 1px solid #333;
+border-radius: 0px;
+}
+.wpsl-store-location p a {
+font-size: 28px;
+text-transform: uppercase;
+}
+/* Privacy Policy Page */
+.page-id-287 p {
+color: #fff;
+}
+
+

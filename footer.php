@@ -12,7 +12,7 @@
 							<p class="text-white foot-info">Address: 210 Artisan Dr, Smyrna, DE 19977<br />Email: socialmedia@blueearlbrewing.com<br />Phone: 302.653.2337 (BEER)</p>
 						</div>
 						<div class="col-md-4">
-							<p class="text-white foot-info">Blue Earl Brewing Company &copy; <?php echo date('Y'); ?><br />All Rights Reserved.
+							<p class="text-white foot-info">Blue Earl Brewing Company &copy; <?php echo date('Y'); ?><br /><a class="social-fa" href="/blue-earl/privacy-policy/">Privacy Policy</a>
 							<br />Provided by: <a target="_blank" href="https://benkaminski.com" class="social-fa">Benjamin Kaminski Consulting</a></p>
 						</div>
 					</div>
@@ -47,4 +47,5 @@
 		<?php wp_footer(); ?>
 
 	</body>
+	<!-- Custom WordPress theme designed by Ben Kaminski of Benjamin Kaminski Consulting (https://benkaminski.com), exclusively for Blue Earl Brewing Company -->
 </html>
