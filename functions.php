@@ -221,3 +221,10 @@ remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links');
 // Remove oEmbed-specific JavaScript from the front-end and back-end.
 remove_action('wp_head', 'wp_oembed_add_host_js');
+//ADMIN SECTION FAVICON ITEMS TO <head> SECTION
+function craftedBrew_Favicon() {
+ echo '<link rel="Icon" type="image/x-icon" href="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/favicon-32x32.png" />
+ <link rel="Shortcut Icon" type="image/x-icon" href="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/favicon-32x32.png" />';
+ }
+ add_action( 'login_head', 'craftedBrew_Favicon' );
+ add_action( 'admin_head', 'craftedBrew_Favicon' );

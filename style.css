@@ -261,7 +261,7 @@ background: transparent;
 margin-right: -20px;
 }
 .navbar-collapse {
-background-color:rgba(0, 0, 0, 0.3);
+background-color: rgba(0, 0, 0, 0.3);
 padding-top: 15px;
 padding-bottom: 15px;
 }
@@ -424,6 +424,19 @@ border: 1px solid #000;
 }
 .eme-past-event {
 display: none;
+}
+.eme-ongoing-event {
+border: 1px solid;
+padding: 15px;
+margin-bottom: 15px;
+background-color:rgba(0, 0, 0, 0.3);
+}
+.eme-ongoing-event::before { 
+content: "Happening Now:";
+color: #dec328;
+text-transform: uppercase;
+height: 35px;
+display: block;
 }
 .next-month {
 background-color: #dec328;
