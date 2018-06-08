@@ -35,15 +35,10 @@
 						</a>
 					</p>
 				</div>
-				<div class="container">
-					<div class="input-group pb-4">
-						<div class="input-group-prepend">
-							<label class="input-group-text"><i class="fas fa-at"></i></label>
-						</div>
-						<input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
-						<div class="input-group-append">
-							<button class="btn btn-warning" type="button">Submit</button>
-						</div>
+				<div class="container mb-0">
+					<div class="col-lg-12 mcSubscribe">
+						<?php echo do_shortcode('[mc4wp_form id="442"]'); ?>
+								
 					</div>
 				</div>
 			</div>

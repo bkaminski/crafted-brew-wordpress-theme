@@ -46,6 +46,16 @@ function tags_support_all()
 {
     register_taxonomy_for_object_type('post_tag', 'page');
 }
+//Change WP Emails and email address away from "WordPress" as sender
+function blueEarl_mail_name( $email ){
+  return 'Blue Earl Brewing'; // new email name from sender.
+}
+add_filter( 'wp_mail_from_name', 'blueEarl_mail_name' );
+
+function blueEarl_mail_from ($email ){
+  return 'socialmedia@blueearlbrewing.com'; // new email address from sender.
+}
+add_filter( 'wp_mail_from', 'blueEarl_mail_from' );
 
 // ensure all tags are included in queries
 function tags_support_query($wp_query)

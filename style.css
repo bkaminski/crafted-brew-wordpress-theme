@@ -4,7 +4,7 @@ Theme URI: https://github.com/bkaminski/crafted-brew-wordpress-theme
 Author: Ben Kaminski
 Author URI: https://benkaminski.com
 Description: WordPress Theme designed for a brewery or bar with custom functions for the Events Made Easy Plug-in as well as other features requested by the original client.
-Version: 0.2.1
+Version: 1.2.1
 License: GNU General Public License v3.0
 License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
 Text Domain: crafted_brew
@@ -43,12 +43,24 @@ pointer-events: none;
 max-width:150px; 
 word-wrap: break-word;
 }
+/* Untappd Styles */
+.ut-menu .menu-header {
+display: none;
+}
+.ut-menu .menu-nav div.menu-list div.menu-list-item a, 
+.ut-menu .menu-nav div.menu-list div.menu-list-item a:visited {
+display: none;
+}
+/* End Untappd */
 .loadtext {
 margin-top: 20%;
 }
 .blue-earl-events {
 background-image: url('lib/img/events-bg02.png');
 background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
 background-size: 1200px 100%;
 min-height: 700px;
 padding: 20px;
@@ -59,6 +71,9 @@ margin-top: -10px;
 background-image: url('lib/img/brewery-bg02.png');
 background-repeat: no-repeat;
 background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
 min-height: 700px;
 padding: 20px;
 font-size: 1.2rem;
@@ -68,6 +83,9 @@ margin-top: -10px;
 background-image: url('lib/img/brewery-bg02.png');
 background-repeat: no-repeat;
 background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
 min-height: 700px;
 padding: 20px;
 font-size: 1.2rem;
@@ -77,6 +95,9 @@ margin-top: -10px;
 background-image: url('lib/img/our-beer-bg02.png');
 background-repeat: no-repeat;
 background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
 min-height: 700px;
 padding: 20px;
 font-size: 1.2rem;
@@ -87,6 +108,7 @@ margin-top: -10px;
 .page-template-blue-earl-events,
 .page-template-default,
 .page-template-brewery,
+.page-template-untappd,
 .tag,
 .error404,
 .wpsl_stores-template-default {
@@ -117,6 +139,7 @@ font-size: 3.5vw;
 .footer-outer {
 background: #324158;
 min-height: 150px;
+margin-bottom: -50px;
 }
 .testimonail-outer {
 background: #a18527;
@@ -274,6 +297,14 @@ padding-left: 0.5rem;
 margin-right: 0;
 font-size: 5vw;
 }
+.mcSubscribe {
+padding-left: 0%;
+}
+.privacy-policy {
+margin-top: -10px;
+position: relative;
+}
+
 /* ========================= Media Queries ========================= */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -348,6 +379,9 @@ font-size: 1.0rem;
 .loadtext {
 margin-top: 53%;
 }
+.mcSubscribe {
+padding-left: 5%;
+}
 .dropdown-menu {
 background-color: #324158;
 text-transform: none;
@@ -386,6 +420,9 @@ margin-top: 0px;
 margin-top: 150px;
 width: 350px;
 }
+.mcSubscribe {
+padding-left: 16%;
+}
 .loadtext {
 margin-top: 45%;
 }
@@ -410,6 +447,9 @@ font-size: 0.9vw;
 .foot-info {
 font-size: 1rem;
 }
+.mcSubscribe {
+padding-left: 22%;
+}
 .blue-earl-logo {
 margin-top: 200px;
 width: 405px;
@@ -424,6 +464,10 @@ border: 1px solid #000;
 }
 .eme-past-event {
 display: none;
+}
+.earl-events {
+background: #fff;
+border: 1px solid;
 }
 .eme-ongoing-event {
 border: 1px solid;
@@ -500,6 +544,11 @@ color: #333;
 }
 table.eme-calendar-table td.eventless-today {
 background-color: #dec328 !important;
+border: 1px solid;
+}
+td.eventful-today {
+background-color: #dec328 !important;
+border: 1px solid;
 }
 #preloader {
 position: fixed;
@@ -546,6 +595,7 @@ border-radius: 0px;
 font-size: 28px;
 text-transform: uppercase;
 }
+
 /* Privacy Policy Page */
 .page-id-287 p {
 color: #fff;
