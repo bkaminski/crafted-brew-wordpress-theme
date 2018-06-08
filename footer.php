@@ -36,7 +36,7 @@
 					</p>
 				</div>
 				<div class="container mb-0">
-					<div class="col-lg-12 mcSubscribe">
+					<div class="col-lg-12 pb-3">
 						<?php echo do_shortcode('[mc4wp_form id="442"]'); ?>
 								
 					</div>

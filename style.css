@@ -297,9 +297,6 @@ padding-left: 0.5rem;
 margin-right: 0;
 font-size: 5vw;
 }
-.mcSubscribe {
-padding-left: 0%;
-}
 .privacy-policy {
 margin-top: -10px;
 position: relative;
@@ -379,9 +376,6 @@ font-size: 1.0rem;
 .loadtext {
 margin-top: 53%;
 }
-.mcSubscribe {
-padding-left: 5%;
-}
 .dropdown-menu {
 background-color: #324158;
 text-transform: none;
@@ -420,9 +414,6 @@ margin-top: 0px;
 margin-top: 150px;
 width: 350px;
 }
-.mcSubscribe {
-padding-left: 16%;
-}
 .loadtext {
 margin-top: 45%;
 }
@@ -446,9 +437,6 @@ font-size: 0.9vw;
 }
 .foot-info {
 font-size: 1rem;
-}
-.mcSubscribe {
-padding-left: 22%;
 }
 .blue-earl-logo {
 margin-top: 200px;
