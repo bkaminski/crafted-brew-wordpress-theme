@@ -106,6 +106,7 @@ margin-top: -10px;
 .page-template-our-beer,
 .page-template-blue-earl-retailers,
 .page-template-blue-earl-events,
+.page-template-privacy-policy,
 .page-template-default,
 .page-template-brewery,
 .page-template-untappd,
@@ -241,6 +242,11 @@ border: 1px solid #333;
 color: #212529;
 background-color: #dec328;
 border-color: #ffc107;
+}
+.btn-link {
+white-space: normal !important; 
+text-align: left;
+color: #333;
 }
 .dropdown-menu {
 background-color: #324158;
