@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/lib/img/interior-bg.png">
 <div class="container our-beer">
 	<div class="row">
 		<div class="container-fluid">
@@ -34,5 +35,6 @@
 			<?php echo crafted_brew_pagination(); ?>
 		</div>
 	</div>
+</div>
 </div>
 <?php get_footer(); ?>

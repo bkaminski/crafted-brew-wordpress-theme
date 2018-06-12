@@ -7,6 +7,7 @@ function enqueue_crafted_brew_scripts()
     wp_enqueue_script('Bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/js/all.js', false, null, null, false);
     wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array('jquery'), null, true, null);
+    wp_enqueue_script('parallax', get_template_directory_uri() . '/lib/js/parallax.min.js', array('jquery'), null, true, null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_scripts');
 
@@ -17,14 +18,6 @@ function enqueue_crafted_brew_styles()
     wp_enqueue_style('crafted-brew-styles', get_template_directory_uri() . '/style.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
-
-//Load Smooth Scroll only on post pages
-function sscroll_post_page() {
-    if ( is_page('287') )
-{
-    wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/lib/js/sscroll.min.js', array('jquery'), null, true, null );
-}}
-add_action('wp_enqueue_scripts', 'sscroll_post_page');
 
 //Hide admin bar from front of site
 show_admin_bar(false);

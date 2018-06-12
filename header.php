@@ -25,6 +25,12 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<?php if ( is_front_page() ) {
+    		echo '<div class="noparallax"></div>';
+			} else {
+    		echo '<div class="parallax-window" data-parallax="scroll" data-image-src="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/interior-bg.png">';
+		};?>
+		
 		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png" alt="Blue Earl Brewing" />

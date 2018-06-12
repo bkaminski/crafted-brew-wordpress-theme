@@ -35,4 +35,5 @@ get_header(); ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
 </div>
+</div>
 <?php get_footer(); ?>
