@@ -30,13 +30,13 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/lib/img/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		<?php if (is_front_page()) { ?>
+			<title><?php echo get_bloginfo( 'name' );  ?> - Delaware's 7th Microbrewery - Smyrna Delaware</title>
+		<?php } ?>
 		<?php if (!eme_is_events_page()) { ?>
 			<title><?php echo get_the_title().' - '.get_bloginfo( 'name' );  ?></title>
-		<?php }?>
-
-		
+		<?php } ?>
 		<?php wp_head(); ?>
-
 	</head>
 	<body <?php body_class(); ?>>
 		<?php if ( is_front_page() ) {
@@ -44,7 +44,6 @@
 			} else {
     		echo '<div class="parallax-window" data-parallax="scroll" data-image-src="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/interior-bg.png">';
 		};?>
-		
 		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png" alt="Blue Earl Brewing" />
