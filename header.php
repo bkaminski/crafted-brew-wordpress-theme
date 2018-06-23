@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885337-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+  			gtag('config', 'UA-119885337-1');
+		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
@@ -21,8 +30,13 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/lib/img/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<title><?php echo get_bloginfo('name'); ?></title>
+		<?php if (!eme_is_events_page()) { ?>
+			<title><?php echo get_the_title().' - '.get_bloginfo( 'name' );  ?></title>
+		<?php }?>
+
+		
 		<?php wp_head(); ?>
+
 	</head>
 	<body <?php body_class(); ?>>
 		<?php if ( is_front_page() ) {
@@ -39,17 +53,17 @@
 				<i class="fas fa-bars fa-fw fa-3x text-white text-shadow hamburger"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<?php
-					wp_nav_menu(array(
-						'theme_location' => 'primary',
-						'depth' => 2,
-						'container' => '',
-						'container_class' => '',
-						'container_id' => '',
-						'menu_class' => 'navbar-nav mx-auto',
-						'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-						'walker' => new WP_Bootstrap_Navwalker()
-					));
+				 <?php
+				wp_nav_menu( array(
+					'theme_location'    => 'primary',
+					'depth'             => 2,
+					'container'         => '',
+					'container_class'   => '',
+					'container_id'      => '',
+					'menu_class'        => 'nav navbar-nav mx-auto',
+					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+					'walker'            => new WP_Bootstrap_Navwalker(),
+				) );
 				?>
 				<div class="pl-1 my-2 my-lg-0">
 					<a href="https://www.facebook.com/blueearlbrewing/" target="_blank">

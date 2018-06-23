@@ -25,9 +25,6 @@ show_admin_bar(false);
 //Allow post and page "featured image"
 add_theme_support('post-thumbnails');
 
-//Allow RSS Feeds
-add_theme_support('automatic-feed-links');
-
 //Disable posts -- for now
 function remove_posts_menu() {
     remove_menu_page('edit.php');
@@ -39,6 +36,7 @@ function tags_support_all()
 {
     register_taxonomy_for_object_type('post_tag', 'page');
 }
+
 //Change WP Emails and email address away from "WordPress" as sender
 function blueEarl_mail_name( $email ){
   return 'Blue Earl Brewing'; // new email name from sender.
@@ -67,11 +65,11 @@ register_nav_menus(array(
 ));
 
 // Register Custom Navigation Walker
-require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
-register_nav_menus(array(
-    'primary' => __('Main Navigation Bar', 'crafted_brew')
-));
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'crafted-brew-wordpress-theme' ),
+) );
 // Nav Walker
 
 //WordPress Fluid Images Bootstrap 4.1.0
@@ -210,20 +208,41 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 /* End Style Login */
 
-/* Kill Emojis */
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
-remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
-remove_action( 'admin_print_styles', 'print_emoji_styles' );
-remove_action( 'wp_head', 'wp_resource_hints', 2 );
-// Remove the REST API endpoint.
-remove_action('rest_api_init', 'wp_oembed_register_route');
-// Don't filter oEmbed results.
-remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
-// Remove oEmbed discovery links.
-remove_action('wp_head', 'wp_oembed_add_discovery_links');
-// Remove oEmbed-specific JavaScript from the front-end and back-end.
-remove_action('wp_head', 'wp_oembed_add_host_js');
+/**
+ * Disable the emoji's
+ */
+function disable_emojis() {
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' ); 
+remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+remove_filter( 'comment_text_rss', 'wp_staticize_emoji' ); 
+remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
+add_filter( 'wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2 );
+}
+add_action( 'init', 'disable_emojis' );
+
+
+function disable_emojis_tinymce( $plugins ) {
+ if ( is_array( $plugins ) ) {
+ return array_diff( $plugins, array( 'wpemoji' ) );
+ } else {
+ return array();
+ }
+}
+
+function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
+ if ( 'dns-prefetch' == $relation_type ) {
+ $emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' );
+
+$urls = array_diff( $urls, array( $emoji_svg_url ) );
+ }
+
+return $urls;
+}
+
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
 function craftedBrew_Favicon() {
  echo '<link rel="Icon" type="image/x-icon" href="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/favicon-32x32.png" />
@@ -231,3 +250,7 @@ function craftedBrew_Favicon() {
  }
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
+
+remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+
+add_theme_support( 'title-tag' );
