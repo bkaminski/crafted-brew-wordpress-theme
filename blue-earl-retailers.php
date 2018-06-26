@@ -7,6 +7,7 @@
  * 
  */
 get_header(); ?>
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/lib/img/interior-bg.png">
 <div class="container brewery">
 	<div class="row">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -21,7 +22,7 @@ get_header(); ?>
 			<main>
 				<?php the_content(); ?>
 				<br />
-				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
+				<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 			
 			</main>
 			<br />
@@ -30,5 +31,6 @@ get_header(); ?>
 	<?php endwhile; else : ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
+</div>
 </div>
 <?php get_footer(); ?>

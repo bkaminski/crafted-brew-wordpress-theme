@@ -18,20 +18,21 @@ get_header(); ?>
 	</div>
 	<div class="row mt-5">
 		<div class="col-md-4 mb-4">
-			<section>
+			<figure>
 				<?php the_post_thumbnail('full'); ?>
-			</section>
+			</figure>
 		</div>
 		<div class="col-md-8 text-white">
 			<main>
 				<?php the_content(); ?>
 				<br />
-				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
+				<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 			</main>
 		</div>
 	</div>
 	<?php endwhile; else : ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
+</div>
 </div>
 <?php get_footer(); ?>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,10 +21,15 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/lib/img/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<title><?php echo get_bloginfo('name'); ?></title>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<?php if ( is_front_page() ) {
+    		echo '<div class="noparallax"></div>';
+			} else {
+    		echo '<div class="parallax-window" data-parallax="scroll" data-image-src="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/interior-bg.png">';
+		};?>
+		
 		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-icon-web.png" alt="Blue Earl Brewing" />
@@ -33,17 +38,17 @@
 				<i class="fas fa-bars fa-fw fa-3x text-white text-shadow hamburger"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<?php
-					wp_nav_menu(array(
-						'theme_location' => 'primary',
-						'depth' => 2,
-						'container' => '',
-						'container_class' => '',
-						'container_id' => '',
-						'menu_class' => 'navbar-nav mx-auto',
-						'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-						'walker' => new WP_Bootstrap_Navwalker()
-					));
+				 <?php
+				wp_nav_menu( array(
+					'theme_location'    => 'primary',
+					'depth'             => 2,
+					'container'         => '',
+					'container_class'   => '',
+					'container_id'      => '',
+					'menu_class'        => 'nav navbar-nav mx-auto',
+					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+					'walker'            => new WP_Bootstrap_Navwalker(),
+				) );
 				?>
 				<div class="pl-1 my-2 my-lg-0">
 					<a href="https://www.facebook.com/blueearlbrewing/" target="_blank">

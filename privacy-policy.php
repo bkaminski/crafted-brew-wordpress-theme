@@ -19,16 +19,14 @@ get_header(); ?>
 	<div class="row mt-5">
 		<div class="col-md-12 mb-4">
 			<main>
-				<h2><strong>Who we are:</strong></h2>
-					<div class="alert alert-warning">
-						Our website address is: <a href="https://blueearlbrewing.com">https://blueearlbrewing.com</a>. Blue Earl Brewing is committed to protecting your privacy. We value our visitors and strive to create an enjoyable and safe browsing experience when visiting our website. This privacy policy sets out how we use and protect any information that you give when you use this website. We are committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. We may change this policy from time to time by updating this page.
-					</div>
+				<?php the_content(); ?>
+				
 			</main>
 				<div class="accordion" id="privacyAccordion1">
 					<div class="card">
 						<div class="card-header" id="headingOne">
 							<h5 class="mb-0">
-								<button class="btn btn-link ppolicy-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><strong><i class="far fa-minus-square fa-fw fa-lg"></i> Information collected by our website</strong></button>
+								<button class="btn btn-link collapsed ppolicy-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><strong><i class="far fa-minus-square fa-fw fa-lg"></i> Information collected by our website:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#privacyAccordion1">
@@ -49,7 +47,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingTwo">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Controlling your personal information</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Controlling your personal information:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#privacyAccordion1">
@@ -63,7 +61,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingThree">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Security</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Security:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#privacyAccordion1">
@@ -84,7 +82,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingFour">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> An introduction to cookies:</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> An introduction to cookies:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#privacyAccordion1">
@@ -114,7 +112,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingFive">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Your consent for cookie deployment by our website:</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Your consent for cookie deployment by our website:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#privacyAccordion1">
@@ -126,7 +124,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingSix">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Cookies used by our website:</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Cookies used by our website:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#privacyAccordion1">
@@ -151,7 +149,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingSeven">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Actual cookies deployed:</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> Actual cookies deployed:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#privacyAccordion1">
@@ -166,7 +164,7 @@ get_header(); ?>
 						 						<th>Cookie Description</th>
 						 					</tr>
 						 				</thead>
-						 				<tbody>
+						 				<tbody style="color: #333;">
 						 					<tr class="table-warning">
 						 						<td rowspan="1">Google Analytics (gtag.js)</td>
 						 						<td>_ga, _gat_gtag_UA_119885337_1, _gid</td>
@@ -174,7 +172,7 @@ get_header(); ?>
 						 					</tr>
 						 					<tr class="table-warning">
 						 						<td>WordFence Security</td>
-						 						<td class="wfcookie">wf_loginalerted_f3eb670f3f2e2b299a88d495bbf63473d5944ccd8dff7a58e4375cf334cd8b45<</td>
+						 						<td class="wfcookie">wf_loginalerted_</td>
 						 						<td>WordFence is a third party plug-in for WordPress and offers a wide variety of protection against attacks, malware, and other harmful actions taken against the website by hackers. This cookie only tracks login attempts and ip addresses of users attempting to log-in to this website. It also provides notification to website administrators of attacks, attempted attacks, malicious code injections, etc.</td>
 						 					</tr>
 						 					<tr class="table-warning">
@@ -196,7 +194,7 @@ get_header(); ?>
 					<div class="card">
 						<div class="card-header" id="headingEight">
 							<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> How to disable cookies:</strong></button>
+								<button class="btn btn-link ppolicy-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><strong><i class="far fa-plus-square fa-fw fa-lg"></i> How to disable cookies:</strong></button>
 							</h5>
 						</div>
 						<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#privacyAccordion1">
@@ -208,7 +206,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<br /><br />
-					<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
+					<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 				</div>
 			<?php endwhile; else : ?>
 				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
@@ -216,15 +214,16 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+</div>
 <script>
-//TOGGLE FONT AWESOME ON CLICK
-jQuery('#privacyAccordion1 h5 button').click(function(){
-    var collapsed=jQuery(this).find('i').hasClass('far fa-plus-square');
-    	jQuery('.btn-link').find('i').removeClass('far fa-minus-square');
-    	jQuery('.btn-link').find('i').addClass('far fa-plus-square');
-
-    if(collapsed)
-    jQuery(this).find('i').removeClass('far fa-minus-square');
-});
+	document.addEventListener('DOMContentLoaded', function () {
+		jQuery('.ppolicy-link').on('click', function () {
+			var collapsed=jQuery(this).find('[data-fa-i2svg]').hasClass('fa-plus-square');
+			jQuery('.btn-link').find('[data-fa-i2svg]').removeClass('fa-minus-square');
+			jQuery('.btn-link').find('[data-fa-i2svg]').addClass('fa-plus-square');
+			if(collapsed)
+				jQuery(this).find('[data-fa-i2svg]').toggleClass('fa-plus-square fa-minus-square')
+		});
+	});
 </script>
 <?php get_footer(); ?>
