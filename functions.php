@@ -19,6 +19,7 @@ function enqueue_crafted_brew_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
 
+<<<<<<< HEAD
 add_action("wp_head", function () {
 
 
@@ -54,6 +55,8 @@ function prefix_output_callback($buffer) {
     return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
 }
 
+=======
+>>>>>>> 2fa38764e9eff69590d798b48eda207dd45a1709
 //Hide admin bar from front of site
 show_admin_bar(false);
 
@@ -286,8 +289,14 @@ function craftedBrew_Favicon() {
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
 
+<<<<<<< HEAD
 function blueEarl_admin_enqueue_script() {
   wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
 }
 
 add_action( 'login_enqueue_scripts', 'blueEarl_admin_enqueue_script', 1 );
+=======
+remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+
+add_theme_support( 'title-tag' );
+>>>>>>> 2fa38764e9eff69590d798b48eda207dd45a1709
