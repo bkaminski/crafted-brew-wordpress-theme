@@ -19,10 +19,8 @@ get_header(); ?>
 	<div class="row mt-5">
 		<div class="col-md-12 mb-4">
 			<main>
-				<h2><strong>Who we are:</strong></h2>
-					<div class="alert alert-warning">
-						Our website address is: <a href="https://blueearlbrewing.com">https://blueearlbrewing.com</a>. Blue Earl Brewing is committed to protecting your privacy. We value our visitors and strive to create an enjoyable and safe browsing experience when visiting our website. This privacy policy sets out how we use and protect any information that you give when you use this website. We are committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. We may change this policy from time to time by updating this page.
-					</div>
+				<?php the_content(); ?>
+				
 			</main>
 				<div class="accordion" id="privacyAccordion1">
 					<div class="card">
@@ -174,7 +172,7 @@ get_header(); ?>
 						 					</tr>
 						 					<tr class="table-warning">
 						 						<td>WordFence Security</td>
-						 						<td class="wfcookie">wf_loginalerted_f3eb670f3f2e2b299a88d495bbf63473d5944ccd8dff7a58e4375cf334cd8b45<</td>
+						 						<td class="wfcookie">wf_loginalerted_</td>
 						 						<td>WordFence is a third party plug-in for WordPress and offers a wide variety of protection against attacks, malware, and other harmful actions taken against the website by hackers. This cookie only tracks login attempts and ip addresses of users attempting to log-in to this website. It also provides notification to website administrators of attacks, attempted attacks, malicious code injections, etc.</td>
 						 					</tr>
 						 					<tr class="table-warning">
@@ -208,7 +206,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<br /><br />
-					<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
+					<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 				</div>
 			<?php endwhile; else : ?>
 				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>

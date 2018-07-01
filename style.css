@@ -10,23 +10,23 @@ License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/mast
 Text Domain: crafted_brew
 */
 a {
-color: #333;
+color: #333333;
 transition: 0.3s ease-in-out;
 word-wrap: break-word;
 }
 a:hover {
-color: #fff;
-text-shadow: 2px 2px 4px #000;
+color: #ffffff;
+text-shadow: 2px 2px 4px #000000;
 text-decoration: underline;
 transition: 0.3s ease-in-out;
 }
 a[rel="tag"] {
-color: #333;
+color: #333333;
 transition: 0.3s ease-in-out;
 }
 a[rel="tag"]:hover {
-color: #fff;
-text-shadow: 2px 2px 4px #000;
+color: #ffffff;
+text-shadow: 2px 2px 4px #000000;
 text-decoration: underline;
 transition: 0.3s ease-in-out;
 }
@@ -35,15 +35,15 @@ border: 0px !important;
 }
 /* Custom Styles */
 #privacyAccordion1 {
-color: #fff;
+color: #ffffff;
 }
 .wfcookie {
-max-width:150px; 
+max-width: 150px;
 word-wrap: break-word;
 }
 .ppolicy-link {
 transition: 0.3s ease-in-out;
-color: #333;
+color: #333333;
 }
 .ppolicy-link:hover {
 text-decoration: none;
@@ -51,13 +51,13 @@ transition: 0.3s ease-in-out;
 }
 .ppolicy-link:focus {
 text-decoration: none;
-color: #333;
+color: #333333;
 }
 /* Untappd Styles */
 .ut-menu .menu-header {
 display: none;
 }
-.ut-menu .menu-nav div.menu-list div.menu-list-item a, 
+.ut-menu .menu-nav div.menu-list div.menu-list-item a,
 .ut-menu .menu-nav div.menu-list div.menu-list-item a:visited {
 display: none;
 }
@@ -66,7 +66,7 @@ display: none;
 margin-top: 20%;
 }
 .blue-earl-events {
-background-image: url('lib/img/events-bg02.png');
+background-image: url("lib/img/events-bg02.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -79,7 +79,7 @@ font-size: 1.2rem;
 margin-top: -10px;
 }
 .brewery {
-background-image: url('lib/img/brewery-bg02.png');
+background-image: url("lib/img/brewery-bg02.png");
 background-repeat: no-repeat;
 background-size: 1200px 100%;
 background-attachment: fixed;
@@ -92,7 +92,7 @@ font-size: 1.2rem;
 margin-top: -10px;
 }
 .bierboard {
-background-image: url('lib/img/brewery-bg02.png');
+background-image: url("lib/img/brewery-bg02.png");
 background-repeat: no-repeat;
 background-size: 1200px 100%;
 background-attachment: fixed;
@@ -105,7 +105,7 @@ font-size: 1.2rem;
 margin-top: -10px;
 }
 .our-beer {
-background-image: url('lib/img/our-beer-bg02.png');
+background-image: url("lib/img/our-beer-bg02.png");
 background-repeat: no-repeat;
 background-size: 1200px 100%;
 background-attachment: fixed;
@@ -148,7 +148,7 @@ margin-bottom: -16px;
 }
 .testimonials {
 min-height: 100px;
-background-image: url('lib/img/blue-earl-cask-bg.png');
+background-image: url("lib/img/blue-earl-cask-bg.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
@@ -176,7 +176,7 @@ border-bottom: 4px solid #dec328;
 padding: 10px;
 }
 .hamburger {
-color: #fff;
+color: #ffffff;
 transition: 0.5s ease-in-out;
 }
 .hamburger:hover {
@@ -189,13 +189,13 @@ transition: 0.5s ease-in-out;
 }
 .social-fa {
 transition: 0.5s ease-in-out;
-color: #fff;
+color: #ffffff;
 }
 .text-shadow {
-text-shadow: 2px 2px 4px #000;
+text-shadow: 2px 2px 4px #000000;
 }
 .box-shadow {
-box-shadow: 2px 2px 4px #000;
+box-shadow: 2px 2px 4px #000000;
 }
 .beer-overflow {
 width: 100%;
@@ -203,7 +203,7 @@ z-index: -1;
 border-bottom: 4px solid #dec328;
 }
 .header-content {
-background-image: url('lib/img/video-poster.png');
+background-image: url("lib/img/video-poster.png");
 background-repeat: no-repeat;
 border-bottom: 4px solid #dec328;
 min-height: 424px;
@@ -235,8 +235,9 @@ outline: 0px auto -webkit-focus-ring-color !important;
 .btn {
 border-radius: 0px;
 }
-.table-bordered td, .table-bordered th {
-border: 1px solid #333;
+.table-bordered td,
+.table-bordered th {
+border: 1px solid #333333;
 }
 .btn-warning {
 color: #212529;
@@ -244,9 +245,9 @@ background-color: #dec328;
 border-color: #ffc107;
 }
 .btn-link {
-white-space: normal !important; 
+white-space: normal !important;
 text-align: left;
-color: #333;
+color: #333333;
 }
 .dropdown-menu {
 background-color: #324158;
@@ -266,13 +267,13 @@ padding-right: 5px;
 overflow-y: auto;
 height: 300px;
 }
-a[aria-expanded="true"]{
+a[aria-expanded="true"] {
 color: #dec328 !important;
 }
 .nav-link {
 font-weight: bold;
 transition: 0.5s ease-in-out;
-text-shadow: 2px 2px 4px #000;
+text-shadow: 2px 2px 4px #000000;
 }
 .nav-link:hover {
 transition: 0.5s ease-in-out;
@@ -280,15 +281,15 @@ color: #dec328 !important;
 }
 .navbar-dark {
 text-transform: uppercase;
-background-color:rgba(0, 0, 0, 0.7);
+background-color: rgba(0, 0, 0, 0.7);
 }
 .navbar-dark .navbar-nav .nav-link {
-color: #fff;
+color: #ffffff;
 font-size: 0.9rem;
 }
 .navbar-dark .navbar-toggler {
-color: #666 !important;
-border: 2px solid #666 !important;
+color: #666666 !important;
+border: 2px solid #666666 !important;
 border-color: transparent !important;
 background: transparent;
 margin-right: -20px;
@@ -307,7 +308,7 @@ background: transparent;
 }
 .card-header {
 background: #e9e9e9;
-color: #333;
+color: #333333;
 }
 .card-body {
 background-color: rgba(0, 0, 0, 0.3);
@@ -405,7 +406,7 @@ background-color: #324158;
 text-transform: none;
 text-align: center;
 white-space: nowrap;
-box-shadow: 2px 2px 4px #000;
+box-shadow: 2px 2px 4px #000000;
 border: none;
 font-size: 1rem;
 border-top: 0px solid #dec328 !important;
@@ -417,8 +418,7 @@ border-bottom: 0px solid #dec328 !important;
 font-size: 1rem;
 }
 .pf-1 {
-font-
-size: 1.2rem;
+font-size: 1.2rem;
 }
 .foot-info {
 font-size: 0.8rem;
@@ -472,22 +472,25 @@ width: 405px;
 .prev-month {
 background-color: #dec328;
 padding-right: 0.7em;
-border: 1px solid #000;
+border: 1px solid #000000;
 }
 .eme-past-event {
 display: none;
 }
+.eventful-pre {
+background: #cccccc;
+}
 .earl-events {
-background: #fff;
+background: #ffffff;
 border: 1px solid;
 }
 .eme-ongoing-event {
 border: 1px solid;
 padding: 15px;
 margin-bottom: 15px;
-background-color:rgba(0, 0, 0, 0.3);
+background-color: rgba(0, 0, 0, 0.3);
 }
-.eme-ongoing-event::before { 
+.eme-ongoing-event::before {
 content: "Happening Now:";
 color: #dec328;
 text-transform: uppercase;
@@ -497,35 +500,35 @@ display: block;
 .next-month {
 background-color: #dec328;
 padding-left: 0.7em;
-border: 1px solid #000;
+border: 1px solid #000000;
 }
 .eme-calendar-full {
-background: #fff;
-background-image: url('lib/img/blue-earl-logo-trans.png');
+background: #ffffff;
+background-image: url("lib/img/blue-earl-logo-trans.png");
 background-repeat: no-repeat;
 background-position: bottom;
 background-position-y: center;
 }
 .days-names {
-background: #333;
-color: #fff;
+background: #333333;
+color: #ffffff;
 }
 .month_name {
-background: #ccc;
+background: #cccccc;
 }
 table.fullcalendar td {
 padding: 5px !important;
 }
 table.eme-calendar-table td.eventful a,
-table.eme-calendar-table td.eventful-today a, 
-div.eventful-today a, 
+table.eme-calendar-table td.eventful-today a,
+div.eventful-today a,
 div.eventful a {
 font-weight: bold;
-color: #333;
+color: #333333;
 }
-table.fullcalendar td.eventless-today, 
-table.fullcalendar td.eventful-today, 
-div.eventless-today, 
+table.fullcalendar td.eventless-today,
+table.fullcalendar td.eventful-today,
+div.eventless-today,
 div.eventful-today {
 background-color: #dec328;
 height: auto;
@@ -543,16 +546,16 @@ padding-bottom: 8px;
 padding-top: 1px;
 }
 a.eventful {
-color: #000;
+color: #000000;
 }
 .eventless-pre,
 .eventless-post,
 .eventful-post {
-background: #ccc;
+background: #cccccc;
 }
-table.eme-calendar-table td.eventless-pre, 
+table.eme-calendar-table td.eventless-pre,
 table.eme-calendar-table td.eventless-post {
-color: #333;
+color: #333333;
 }
 table.eme-calendar-table td.eventless-today {
 background-color: #dec328 !important;
@@ -569,38 +572,39 @@ top: 0px;
 width: 100%;
 height: 100%;
 z-index: 999999999999;
-background: url("lib/img/blue-earl-preloader.gif") 50% 30% no-repeat #fff;
+background: url("lib/img/blue-earl-preloader.gif") 50% 30% no-repeat #ffffff;
 background-clip: padding-box;
 }
 /* Find Beer Page */
 .page-id-244 p {
-color: #fff;
+color: #ffffff;
 }
 .wpsl-info-window p {
-color: #000;
+color: #000000;
 }
 .wpsl-direction-wrap {
 background-color: rgba(0, 0, 0, 0.7);
 padding-left: 15px;
 padding: 5px;
-color: #fff;
+color: #ffffff;
 }
 .wpsl-direction-wrap a {
-color: #fff;
+color: #ffffff;
 }
 #wpsl-search-btn {
 padding: 7px 10px;
 line-height: 1.428571429;
 font-weight: 400;
-color: #333;
+color: #333333;
 background-color: #dec328;
 background-repeat: none;
 background-image: none !important;
 box-shadow: none !important;
 text-transform: none !important;
 }
-#wpsl-search-btn, #wpsl-search-wrap input {
-border: 1px solid #333;
+#wpsl-search-btn,
+#wpsl-search-wrap input {
+border: 1px solid #333333;
 border-radius: 0px;
 }
 .wpsl-store-location p a {
@@ -610,7 +614,5 @@ text-transform: uppercase;
 
 /* Privacy Policy Page */
 .page-id-287 p {
-color: #fff;
+color: #ffffff;
 }
-
-

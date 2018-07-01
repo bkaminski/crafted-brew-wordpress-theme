@@ -5,7 +5,7 @@ function enqueue_crafted_brew_scripts()
 {
     wp_enqueue_script('Ajax-Popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, null, true, null);
     wp_enqueue_script('Bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), null, true, null);
-    wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/js/all.js', false, null, null, false);
+    wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
     wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array('jquery'), null, true, null);
     wp_enqueue_script('parallax', get_template_directory_uri() . '/lib/js/parallax.min.js', array('jquery'), null, true, null);
 }
@@ -36,8 +36,29 @@ add_action("wp_head", function () {
 }, 0); // priority 0 to be launched before the call of "_wp_render_title_tag"
 
 
+<<<<<<< HEAD
 add_theme_support( 'title-tag' );
 
+=======
+//Title tag support
+add_theme_support( 'title-tag' );
+
+//Remove attribute from javascript url's 
+add_action('wp_loaded', 'prefix_output_buffer_start');
+function prefix_output_buffer_start() { 
+    ob_start("prefix_output_callback"); 
+}
+
+add_action('shutdown', 'prefix_output_buffer_end');
+function prefix_output_buffer_end() { 
+    ob_end_flush(); 
+}
+
+function prefix_output_callback($buffer) {
+    return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
+}
+
+>>>>>>> 75f7faeef4c6b618fcc7002419fa81106870f983
 //Hide admin bar from front of site
 show_admin_bar(false);
 
@@ -204,13 +225,13 @@ function my_login_logo() { ?>
         }
         label[for=user_pass]:before {
             content: "\f023 \2002";
-            font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free";
             color: #999;
         }
         label[for=user_login]:before {
-            content: "\f007 \2002";
-            font-family: FontAwesome;
-            color: #999;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 400;
+            content: "\f2c1 \2002";
         }
     </style>
 <?php }
@@ -270,4 +291,12 @@ function craftedBrew_Favicon() {
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
 
+<<<<<<< HEAD
 
+=======
+function blueEarl_admin_enqueue_script() {
+  wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
+}
+
+add_action( 'login_enqueue_scripts', 'blueEarl_admin_enqueue_script', 1 );
+>>>>>>> 75f7faeef4c6b618fcc7002419fa81106870f983

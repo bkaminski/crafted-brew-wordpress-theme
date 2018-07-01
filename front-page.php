@@ -6,7 +6,7 @@
 	<header>
 		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
-			<video autoplay="true" id="video-background" class="beer-overflow" muted="" plays-inline loop="true" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.mp4" type="video/mp4">
+			<video autoplay="" id="video-background" class="beer-overflow" muted="" loop="" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.mp4">
 				<p class="text-center">Your browser may not support HTML5 video</p>
 				<span class="sr-only">Video of beer being poured into pint glass.</span>
 			</video>
@@ -17,7 +17,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<p class="gold-text pt-3 text-uppercase pf-1">Delaware’s 7th microbrewery located in The Historic Town of Smyrna. Brewing extra special beer offerings!</p>
+						<h6 class="gold-text pt-3 text-uppercase pf-1">Delaware’s 7th microbrewery located in The Historic Town of Smyrna. Brewing extra special beer offerings!</h6>
 					</div>
 					<div class="col-md-3">
 						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="brewery/about-us/">About Us</a>
@@ -36,7 +36,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<p class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</p>
+						<h6 class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</h6>
 					</div>
 					<div class="col-md-3">
 						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="/blue-earl-brewing/brewery-tours/">Book Tour</a>

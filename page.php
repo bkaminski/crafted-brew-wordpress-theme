@@ -14,7 +14,7 @@
 			<main>
 				<?php the_content(); ?>
 				<br />
-				<?php the_tags('<span class="badge badge-primary">Related:</span> ' , ', ', ''); ?>
+				<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 			</main>
 			<br />
 		</div>
