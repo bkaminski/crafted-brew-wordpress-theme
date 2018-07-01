@@ -19,6 +19,22 @@ function enqueue_crafted_brew_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
 
+
+add_action('wp_head', 'remove_all_wpseo_og', 1);
+function remove_all_wpseo_og() {
+	if ( eme_is_events_page() ) {
+		remove_action( 'wpseo_head', array( $GLOBALS['wpseo_og'], 'opengraph' ), 30 );
+	}
+}
+
+add_action('wp_head', 'remove_all_wpseo_twitter', 1);
+function remove_all_wpseo_twitter() {
+	if ( eme_is_events_page() ) {
+		remove_action( 'wpseo_head' , array( 'WPSEO_Twitter' , 'get_instance' ) , 40 );
+	}
+}
+
+//Add Custom Page Titles to Events Made Easy
 add_action("wp_head", function () {
 
 
@@ -36,10 +52,6 @@ add_action("wp_head", function () {
 }, 0); // priority 0 to be launched before the call of "_wp_render_title_tag"
 
 
-<<<<<<< HEAD
-add_theme_support( 'title-tag' );
-
-=======
 //Title tag support
 add_theme_support( 'title-tag' );
 
@@ -58,7 +70,6 @@ function prefix_output_callback($buffer) {
     return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
 }
 
->>>>>>> 75f7faeef4c6b618fcc7002419fa81106870f983
 //Hide admin bar from front of site
 show_admin_bar(false);
 
@@ -291,12 +302,8 @@ function craftedBrew_Favicon() {
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
 
-<<<<<<< HEAD
-
-=======
 function blueEarl_admin_enqueue_script() {
   wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
 }
 
 add_action( 'login_enqueue_scripts', 'blueEarl_admin_enqueue_script', 1 );
->>>>>>> 75f7faeef4c6b618fcc7002419fa81106870f983

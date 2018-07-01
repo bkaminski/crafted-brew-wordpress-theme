@@ -11,6 +11,10 @@
 	</div>
 	<div class="row mt-5">
 		<div class="col-md-12 mb-4">
+			<figure>
+				<?php the_post_thumbnail( 'full', array( 'class' => 'mx-auto d-block' ) ); ?>
+						
+			</figure>
 			<main>
 				<?php the_content(); ?>
 				<br />

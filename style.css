@@ -249,6 +249,10 @@ white-space: normal !important;
 text-align: left;
 color: #333333;
 }
+.img-thumbnail {
+background-color: #484747;
+border: 1px solid #cccccc;
+}
 .dropdown-menu {
 background-color: #324158;
 text-transform: none;
