@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885337-1"></script>
-		<script>
-	  		window.dataLayer = window.dataLayer || [];
-	  		function gtag(){dataLayer.push(arguments);}
-	  		gtag('js', new Date());
-
-  			gtag('config', 'UA-119885337-1');
-		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
@@ -30,12 +21,6 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/lib/img/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<?php if (is_front_page()) { ?>
-			<title><?php echo get_bloginfo( 'name' );  ?> - Delaware's 7th Microbrewery - Smyrna Delaware</title>
-		<?php } ?>
-		<?php if (!eme_is_events_page()) { ?>
-			<title><?php echo get_the_title().' - '.get_bloginfo( 'name' );  ?></title>
-		<?php } ?>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

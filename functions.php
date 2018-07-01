@@ -19,6 +19,25 @@ function enqueue_crafted_brew_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
 
+add_action("wp_head", function () {
+
+
+    if (eme_is_single_event_page()) {
+
+        $extra_headers_format = get_option('eme_event_html_headers_format');
+
+        if (!empty($extra_headers_format)) {
+            remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+        }
+
+    }
+
+
+}, 0); // priority 0 to be launched before the call of "_wp_render_title_tag"
+
+
+add_theme_support( 'title-tag' );
+
 //Hide admin bar from front of site
 show_admin_bar(false);
 
@@ -251,6 +270,4 @@ function craftedBrew_Favicon() {
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
 
-remove_action( 'wp_head', '_wp_render_title_tag', 1 );
 
-add_theme_support( 'title-tag' );
