@@ -7,7 +7,7 @@
  * 
  */
 get_header(); ?>
-<div class="container blue-earl-events">
+<div class="container brewery">
 	<div class="row">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<header>
