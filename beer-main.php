@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * Template Name: Main Beer Page
@@ -418,4 +417,3 @@ get_header(); ?>
 	</div>
 </div>
 <?php get_footer(); ?>
->>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
