@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a{color:#333333;transition:0.3s ease-in-out;word-wrap:break-word;}
 a:hover{color:#ffffff;text-shadow:2px 2px 4px #000000;transition:0.3s ease-in-out;text-decoration:none;}
 a[rel="tag"]{color:#333333;transition:0.3s ease-in-out;}
@@ -16,6 +17,127 @@ img[style]{border:0px !important;}
 .brewery{background-image:url("lib/img/brewery-bg02.png");background-repeat:no-repeat;background-size:1200px 100%;background-attachment:fixed;background-size:cover;background-position:top left;min-height:700px;padding:20px;padding-top:110px;font-size:1.2rem;margin-top:-10px;}
 .bierboard{background-image:url("lib/img/brewery-bg02.png");background-repeat:no-repeat;background-size:1200px 100%;background-attachment:fixed;background-size:cover;background-position:top left;min-height:700px;padding:20px;padding-top:110px;font-size:1.2rem;margin-top:-10px;}
 .our-beer{background-image:url("lib/img/our-beer-bg02.png");background-repeat:no-repeat;background-size:1200px 100%;background-attachment:fixed;background-size:cover;background-position:top left;min-height:700px;padding:20px;padding-top:110px;font-size:1.2rem;margin-top:-10px;}
+=======
+/*
+Theme Name: Crafted Brew WordPress Theme
+Theme URI: https://github.com/bkaminski/crafted-brew-wordpress-theme
+Author: Ben Kaminski
+Author URI: https://benkaminski.com
+Description: WordPress Theme designed for a brewery or bar with custom functions for the Events Made Easy Plug-in as well as other features requested by the original client.
+Version: 1.2.1
+License: GNU General Public License v3.0
+License URI: https://github.com/bkaminski/crafted-brew-wordpress-theme/blob/master/LICENSE
+Text Domain: crafted_brew
+*/
+a {
+color: #333333;
+transition: 0.3s ease-in-out;
+word-wrap: break-word;
+}
+a:hover {
+color: #ffffff;
+text-shadow: 2px 2px 4px #000000;
+text-decoration: underline;
+transition: 0.3s ease-in-out;
+}
+a[rel="tag"] {
+color: #333333;
+transition: 0.3s ease-in-out;
+}
+a[rel="tag"]:hover {
+color: #ffffff;
+text-shadow: 2px 2px 4px #000000;
+text-decoration: underline;
+transition: 0.3s ease-in-out;
+}
+img[style] {
+border: 0px !important;
+}
+/* Custom Styles */
+#privacyAccordion1 {
+color: #ffffff;
+}
+.wfcookie {
+max-width: 150px;
+word-wrap: break-word;
+}
+.ppolicy-link {
+transition: 0.3s ease-in-out;
+color: #333333;
+}
+.ppolicy-link:hover {
+text-decoration: none;
+transition: 0.3s ease-in-out;
+}
+.ppolicy-link:focus {
+text-decoration: none;
+color: #333333;
+}
+/* Untappd Styles */
+.ut-menu .menu-header {
+display: none;
+}
+.ut-menu .menu-nav div.menu-list div.menu-list-item a,
+.ut-menu .menu-nav div.menu-list div.menu-list-item a:visited {
+display: none;
+}
+/* End Untappd */
+.loadtext {
+margin-top: 20%;
+}
+.blue-earl-events {
+background-image: url("lib/img/events-bg02.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
+background-size: 1200px 100%;
+min-height: 700px;
+padding: 20px;
+padding-top: 110px !important;
+font-size: 1.2rem;
+margin-top: -10px;
+}
+.brewery {
+background-image: url("lib/img/brewery-bg02.png");
+background-repeat: no-repeat;
+background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
+min-height: 700px;
+padding: 20px;
+padding-top: 110px;
+font-size: 1.2rem;
+margin-top: -10px;
+}
+.bierboard {
+background-image: url("lib/img/brewery-bg02.png");
+background-repeat: no-repeat;
+background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
+min-height: 700px;
+padding: 20px;
+padding-top: 110px;
+font-size: 1.2rem;
+margin-top: -10px;
+}
+.our-beer {
+background-image: url("lib/img/our-beer-bg02.png");
+background-repeat: no-repeat;
+background-size: 1200px 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: top left;
+min-height: 700px;
+padding: 20px;
+padding-top: 110px;
+font-size: 1.2rem;
+margin-top: -10px;
+}
+>>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
 .page-template-our-beer,
 .page-template-blue-earl-retailers,
 .page-template-blue-earl-events,
@@ -25,6 +147,7 @@ img[style]{border:0px !important;}
 .page-template-untappd,
 .tag,
 .error404,
+<<<<<<< HEAD
 .wpsl_stores-template-default{width:100%;height:auto;padding-top:0px;}
 .car-img{margin-top:0px;}
 .foot-info{font-size:3.5vw;}
@@ -68,21 +191,235 @@ a[aria-expanded="true"]{color:#dec328 !important;}
 .card{background:transparent;}
 .card-header{background:#e9e9e9;color:#333333;}
 .card-body{background-color:rgba(0, 0, 0, 0.3);}
+=======
+.wpsl_stores-template-default {
+width: 100%;
+height: auto;
+padding-top: 0px;
+}
+.car-img {
+margin-top: 0px;
+}
+.foot-info {
+font-size: 3.5vw;
+}
+.footer-outer {
+background: #324158;
+min-height: 150px;
+margin-bottom: -50px;
+}
+.testimonail-outer {
+background: #a18527;
+margin-bottom: -16px;
+}
+.testimonials {
+min-height: 100px;
+background-image: url("lib/img/blue-earl-cask-bg.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+padding: 20px;
+font-size: 3.5vw;
+}
+.pf-1 {
+font-size: 1.2rem;
+transition: 0.3s ease-in-out;
+}
+.btn-1 {
+transition: 0.3s ease-in-out;
+}
+#brewForYourSoul {
+float: right;
+padding-right: 15px;
+}
+.gold-text {
+color: #dec328;
+}
+.book-tour {
+min-height: 100px;
+background: #0c5282;
+border-bottom: 4px solid #dec328;
+padding: 10px;
+}
+.hamburger {
+color: #ffffff;
+transition: 0.5s ease-in-out;
+}
+.hamburger:hover {
+color: #dec328 !important;
+transition: 0.5s ease-in-out;
+}
+.social-fa:hover {
+color: #dec328 !important;
+transition: 0.5s ease-in-out;
+}
+.social-fa {
+transition: 0.5s ease-in-out;
+color: #ffffff;
+}
+.text-shadow {
+text-shadow: 2px 2px 4px #000000;
+}
+.box-shadow {
+box-shadow: 2px 2px 4px #000000;
+}
+.beer-overflow {
+width: 100%;
+z-index: -1;
+border-bottom: 4px solid #dec328;
+}
+.header-content {
+background-image: url("lib/img/video-poster.png");
+background-repeat: no-repeat;
+border-bottom: 4px solid #dec328;
+min-height: 424px;
+margin-bottom: 0px;
+}
+.blue-earl-logo {
+margin-top: 150px;
+width: 200px;
+position: absolute;
+left: 0;
+right: 0;
+transition: 0.4s ease-in-out;
+}
+#video-background {
+visibility: hidden;
+}
+.no-padding {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.xtra-padding {
+padding-left: 13%;
+}
+/* hides hamburger outline focus */
+button:focus {
+outline: 0px dotted !important;
+outline: 0px auto -webkit-focus-ring-color !important;
+}
+.btn {
+border-radius: 0px;
+}
+.table-bordered td,
+.table-bordered th {
+border: 1px solid #333333;
+}
+.btn-warning {
+color: #212529;
+background-color: #dec328;
+border-color: #ffc107;
+}
+.btn-link {
+white-space: normal !important;
+text-align: left;
+color: #333333;
+}
+.img-thumbnail {
+background-color: #484747;
+border: 1px solid #cccccc;
+}
+.dropdown-menu {
+background-color: #324158;
+text-transform: none;
+text-align: center;
+border-top: 2px solid #dec328 !important;
+border-bottom: 2px solid #dec328 !important;
+white-space: nowrap;
+box-shadow: none;
+border: none;
+border-radius: 0px;
+font-size: 4vw;
+padding-left: 5px;
+padding-right: 5px;
+}
+a[aria-expanded="true"] {
+color: #dec328 !important;
+}
+.nav-link {
+font-weight: bold;
+transition: 0.5s ease-in-out;
+text-shadow: 2px 2px 4px #000000;
+}
+.nav-link:hover {
+transition: 0.5s ease-in-out;
+color: #dec328 !important;
+}
+.navbar-dark {
+text-transform: uppercase;
+background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-dark .navbar-nav .nav-link {
+color: #ffffff;
+font-size: 0.9rem;
+}
+.navbar-dark .navbar-toggler {
+color: #666666 !important;
+border: 2px solid #666666 !important;
+border-color: transparent !important;
+background: transparent;
+margin-right: -20px;
+}
+.navbar-collapse {
+background-color: rgba(0, 0, 0, 0.3);
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+.card {
+background: transparent;
+}
+.card-header {
+background: #e9e9e9;
+color: #333333;
+}
+.card-body {
+background-color: rgba(0, 0, 0, 0.3);
+}
+>>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
 #wpsl-search-wrap .wpsl-input label,
 .radius-label{margin-right:0;font-size:5vw;}
 .privacy-policy{margin-top:-10px;position:relative;}
 @media (min-width:576px){.foot-info{font-size:2.7vw;}
 #wpsl-search-wrap .wpsl-input label,
+<<<<<<< HEAD
 .radius-label{margin-right:0;font-size:2vw;}
 .xtra-padding{padding-left:28%;}
 .navbar-expand-md .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem;}}
 @media (min-width:768px){#brewForYourSoul{float:none;padding-right:0px;}
 .our-beer-dropdown .show{overflow-y:none;height:auto;}
+=======
+.radius-label {
+margin-right: 0;
+font-size: 2vw;
+}
+.xtra-padding {
+padding-left: 28%;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+#brewForYourSoul {
+float: none;
+padding-right: 0px;
+}
+.our-beer-dropdown .show {
+overflow-y: none;
+height: auto;
+}
+>>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
 #wpsl-search-wrap .wpsl-input label,
 .radius-label{margin-right:0;font-size:1.7vw;}
 .our-beer,
 .bierboard,
 .blue-earl-events,
+<<<<<<< HEAD
 .brewery{background-size:100% 100%;min-height:800px;margin-top:15px;}
 .foot-info{font-size:0.56rem;}
 .nopadding{padding-right:-15px !important;padding-left:-15px !important;}
@@ -98,6 +435,72 @@ a[aria-expanded="true"]{color:#dec328 !important;}
 @media (min-width:992px){.navbar-dark .navbar-nav .nav-link{font-size:1rem;}
 .pf-1{font-size:1.2rem;}
 .foot-info{font-size:0.8rem;}
+=======
+.brewery {
+background-size: 100% 100%;
+min-height: 800px;
+margin-top: 15px;
+}
+.foot-info {
+font-size: 0.56rem;
+}
+.nopadding {
+padding-right: -15px !important;
+padding-left: -15px !important;
+}
+.car-img {
+margin-top: -150px;
+}
+#video-background {
+visibility: visible;
+}
+.blue-earl-logo {
+margin-top: 128px;
+width: 300px;
+}
+.header-content {
+min-height: 420px;
+background-image: none;
+background-repeat: no-repeat;
+border-bottom: 0px solid #5abfdd;
+margin-bottom: -6px;
+}
+.navbar-collapse {
+background: transparent;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+.pf-1 {
+font-size: 1.0rem;
+}
+.loadtext {
+margin-top: 53%;
+}
+.dropdown-menu {
+background-color: #324158;
+text-transform: none;
+text-align: center;
+white-space: nowrap;
+box-shadow: 2px 2px 4px #000000;
+border: none;
+font-size: 1rem;
+border-top: 0px solid #dec328 !important;
+border-bottom: 0px solid #dec328 !important;
+}}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.navbar-dark .navbar-nav .nav-link {
+font-size: 1rem;
+}
+.pf-1 {
+font-size: 1.2rem;
+}
+.foot-info {
+font-size: 0.8rem;
+}
+>>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
 #wpsl-search-wrap .wpsl-input label,
 .radius-label{margin-right:0;font-size:1.3vw;}
 .our-beer,
@@ -110,6 +513,7 @@ a[aria-expanded="true"]{color:#dec328 !important;}
 @media (min-width:1200px){.navbar-expand-md .navbar-nav .nav-link{padding-right:2.5rem;padding-left:2.5rem;}
 .loadtext{margin-top:35%;}
 #wpsl-search-wrap .wpsl-input label,
+<<<<<<< HEAD
 .radius-label{margin-right:0;font-size:0.9vw;}
 .foot-info{font-size:1rem;}
 .blue-earl-logo{margin-top:200px;width:405px;}}
@@ -152,3 +556,166 @@ td.eventful-today{background-color:#dec328 !important;border:1px solid;}
 #wpsl-search-wrap input{border:1px solid #333333;border-radius:0px;}
 .wpsl-store-location p a{font-size:28px;text-transform:uppercase;}
 .page-id-287 p{color:#ffffff;}
+=======
+.radius-label {
+margin-right: 0;
+font-size: 0.9vw;
+}
+.foot-info {
+font-size: 1rem;
+}
+.blue-earl-logo {
+margin-top: 200px;
+width: 405px;
+}}
+/* ========================= End Media Queries ========================= */
+
+/* ========================= EME Plugin Overrides ========================= */
+.prev-month {
+background-color: #dec328;
+padding-right: 0.7em;
+border: 1px solid #000000;
+}
+.eme-past-event {
+display: none;
+}
+.eventful-pre {
+background: #cccccc;
+}
+.earl-events {
+background: #ffffff;
+border: 1px solid;
+}
+.eme-ongoing-event {
+border: 1px solid;
+padding: 15px;
+margin-bottom: 15px;
+background-color: rgba(0, 0, 0, 0.3);
+}
+.eme-ongoing-event::before {
+content: "Happening Now:";
+color: #dec328;
+text-transform: uppercase;
+height: 35px;
+display: block;
+}
+.next-month {
+background-color: #dec328;
+padding-left: 0.7em;
+border: 1px solid #000000;
+}
+.eme-calendar-full {
+background: #ffffff;
+background-image: url("lib/img/blue-earl-logo-trans.png");
+background-repeat: no-repeat;
+background-position: bottom;
+background-position-y: center;
+}
+.days-names {
+background: #333333;
+color: #ffffff;
+}
+.month_name {
+background: #cccccc;
+}
+table.fullcalendar td {
+padding: 5px !important;
+}
+table.eme-calendar-table td.eventful a,
+table.eme-calendar-table td.eventful-today a,
+div.eventful-today a,
+div.eventful a {
+font-weight: bold;
+color: #333333;
+}
+table.fullcalendar td.eventless-today,
+table.fullcalendar td.eventful-today,
+div.eventless-today,
+div.eventful-today {
+background-color: #dec328;
+height: auto;
+margin-top: 5px;
+margin-left: 5px;
+}
+table.fullcalendar tbody td {
+height: 100px;
+font-size: 1.1vw;
+}
+ul.eme-calendar-day-event {
+list-style-type: none;
+background: #17a2b8;
+padding-bottom: 8px;
+padding-top: 1px;
+}
+a.eventful {
+color: #000000;
+}
+.eventless-pre,
+.eventless-post,
+.eventful-post {
+background: #cccccc;
+}
+table.eme-calendar-table td.eventless-pre,
+table.eme-calendar-table td.eventless-post {
+color: #333333;
+}
+table.eme-calendar-table td.eventless-today {
+background-color: #dec328 !important;
+border: 1px solid;
+}
+td.eventful-today {
+background-color: #dec328 !important;
+border: 1px solid;
+}
+#preloader {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 999999999999;
+background: url("lib/img/blue-earl-preloader.gif") 50% 30% no-repeat #ffffff;
+background-clip: padding-box;
+}
+/* Find Beer Page */
+.page-id-244 p {
+color: #ffffff;
+}
+.wpsl-info-window p {
+color: #000000;
+}
+.wpsl-direction-wrap {
+background-color: rgba(0, 0, 0, 0.7);
+padding-left: 15px;
+padding: 5px;
+color: #ffffff;
+}
+.wpsl-direction-wrap a {
+color: #ffffff;
+}
+#wpsl-search-btn {
+padding: 7px 10px;
+line-height: 1.428571429;
+font-weight: 400;
+color: #333333;
+background-color: #dec328;
+background-repeat: none;
+background-image: none !important;
+box-shadow: none !important;
+text-transform: none !important;
+}
+#wpsl-search-btn,
+#wpsl-search-wrap input {
+border: 1px solid #333333;
+border-radius: 0px;
+}
+.wpsl-store-location p a {
+font-size: 28px;
+text-transform: uppercase;
+}
+
+/* Privacy Policy Page */
+.page-id-287 p {
+color: #ffffff;
+}
+>>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
