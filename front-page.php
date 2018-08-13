@@ -5,11 +5,7 @@
 
 	<header>
 		<div class="container-fluid no-padding header-content">
-<<<<<<< HEAD
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
-=======
-			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
->>>>>>> 18907f68071382e83d825becc4e00894cfe4e162
 			<video autoplay="" id="video-background" class="beer-overflow" muted="" loop="" src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.mp4">
 				<p class="text-center">Your browser may not support HTML5 video</p>
 				<span class="sr-only">Video of beer being poured into pint glass.</span>
@@ -73,5 +69,6 @@
 				</div>
 			</div>
 		</div>
+		<?php include get_template_directory() . '/lib/inc/event-modal.php'; ?>
 	</aside>
 <?php get_footer(); ?>
