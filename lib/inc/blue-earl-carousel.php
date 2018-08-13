@@ -8,6 +8,7 @@
 				<li data-target="#carouselIndicators" data-slide-to="5"></li>
 				<li data-target="#carouselIndicators" data-slide-to="6"></li>
 				<li data-target="#carouselIndicators" data-slide-to="7"></li>
+				<li data-target="#carouselIndicators" data-slide-to="8"></li>
 			</ol>
 			<div class="carousel-inner" style="max-height:632px;">
 				<div class="carousel-item car-img active">
@@ -21,6 +22,9 @@
 				</div>
 				<div class="carousel-item car-img">
 					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-03.jpg" alt="A large lineup of lovely bottled Blue Earl beer.">
+				</div>
+				<div class="carousel-item car-img">
+					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-01.jpg" alt="The infamous steampunk guitar on display at Blue Earl Brewery">
 				</div>
 				<div class="carousel-item car-img">
 					<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/lib/img/carousel-05.jpg" alt="Close up of Blue Earl bottled beer offerings.">
