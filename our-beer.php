@@ -14,7 +14,7 @@ get_header(); ?>
 				<header>
 					<div class="col">
 						<span itemprop="name">
-							<h1 class="text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
+							<h1 class="headerAlign text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
 						</span>
 					</div>
 				</header>

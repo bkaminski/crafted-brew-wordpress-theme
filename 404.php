@@ -3,7 +3,7 @@
 	<div class="row">
 		<header>
 			<div class="col">
-				<h1 class="text-white mb-5 text-uppercase"><?php _e( '404: Page Not Found', 'crafted_brew' ); ?></h1>
+				<h1 class="headerAlign text-white mb-5 text-uppercase"><?php _e( '404: Page Not Found', 'crafted_brew' ); ?></h1>
 			</div>
 		</header>
 	</div>

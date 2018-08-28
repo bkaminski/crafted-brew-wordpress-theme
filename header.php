@@ -12,6 +12,7 @@
 		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-72x72.png">
@@ -38,7 +39,7 @@
     		echo '<div class="parallax-window" data-parallax="scroll" data-image-src="https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/img/interior-bg.png">';
 		};?>
 		
-		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark be-nav">
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing-icon.png" alt="Blue Earl Brewing" />
 			</a>
