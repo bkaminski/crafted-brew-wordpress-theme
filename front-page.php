@@ -2,7 +2,6 @@
 	<div id="preloader">
 		<p class="text-center h5 loadtext">Blue Earl is loading...</p>
 	</div>
-
 	<header>
 		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-logo.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
