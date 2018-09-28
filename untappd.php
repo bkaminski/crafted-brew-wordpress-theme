@@ -18,7 +18,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<header>
 			<div class="col">
-				<h1 class="text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
+				<h1 class="headerAlign text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
 			</div>
 		</header>
 	</div>

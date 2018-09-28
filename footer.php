@@ -23,7 +23,7 @@
 					</div>
 				</div>
 				<div class="container pt-3">
-					<p class="text-white text-center">Join our mailing list, never miss an update!  
+					<p class="text-white text-center">
 						<a href="https://www.facebook.com/blueearlbrewing/" target="_blank" class="ml-3">
 							<i class="fab fa-facebook-square fa-fw fa-lg text-white mr-2 text-shadow social-fa"></i>
 						</a>
@@ -31,8 +31,12 @@
 							<i class="fab fa-twitter-square fa-fw fa-lg text-white mr-2 text-shadow social-fa"></i>
 						</a>
 						<a href="https://www.instagram.com/blueearlbeer/?hl=en" target="_blank">
-							<i class="fab fa-instagram fa-fw fa-lg text-white mr-5 text-shadow social-fa"></i>
+							<i class="fab fa-instagram fa-fw fa-lg text-white mr-2 text-shadow social-fa"></i>
 						</a>
+						<a href="https://untappd.com/BlueEarlBrewingCo" target="_blank">
+							<i class="fab fa-untappd fa-fw fa-lg text-white text-shadow social-fa mr-5"></i>
+						</a><br />
+						Join our mailing list, never miss an update!<br /> 
 					</p>
 				</div>
 				<div class="container mb-0">

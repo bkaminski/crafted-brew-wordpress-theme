@@ -4,17 +4,18 @@
 function enqueue_crafted_brew_scripts()
 {
     wp_enqueue_script('Ajax-Popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, null, true, null);
-    wp_enqueue_script('Bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), null, true, null);
+    wp_enqueue_script('Bootstrap-4.1.3', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
     wp_enqueue_script('crafted-brew-scripts', get_template_directory_uri() . '/lib/js/craftedBrew.js', array('jquery'), null, true, null);
     wp_enqueue_script('parallax', get_template_directory_uri() . '/lib/js/parallax.min.js', array('jquery'), null, true, null);
+    //wp_enqueue_script('cookie-js', get_template_directory_uri() . '/lib/js/cookie.min.js', false, null, true, null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_scripts');
 
 //Load CSS
 function enqueue_crafted_brew_styles()
 {
-    wp_enqueue_style('bootstrap-4.1.1', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', array(), null);
+    wp_enqueue_style('bootstrap-4.1.3', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', array(), null);
     wp_enqueue_style('crafted-brew-styles', get_template_directory_uri() . '/style.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_crafted_brew_styles');
@@ -207,7 +208,7 @@ function crafted_brew_pagination($pages = '', $range = 1)
 function my_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/img/blue-earl-logo.png) !important;
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/img/blue-earl-brewing.png) !important;
             background-size: contain !important;
             width: 200px !important;
             height: 210px !important

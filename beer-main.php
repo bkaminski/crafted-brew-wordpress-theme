@@ -12,7 +12,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<header>
 			<div class="col">
-				<h1 class="text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
+				<h1 class="headerAlign text-white mb-5 text-uppercase"><?php the_title(); ?></h1>
 			</div>
 		</header>
 	</div>
@@ -61,16 +61,26 @@ get_header(); ?>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
-				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/four-corners-ale/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/four-corners-ale-blue-earl-150x150.jpg" alt="Four Corners Ale" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-619" /><br /><span itemprop="name">Four Corners Ale</span></a></strong></p>
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/clockwork-orange/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/07/clockwork-orange-blue-earl-150x150.jpg" alt="Clockwork Orange" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-619" /><br /><span itemprop="name">Clockwork Orange</span></a></strong></p>
 				        </div>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
-				     	<div itemscope itemtype="http://schema.org/Product">
-				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/gnarly-red-rooster/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/gnarly-red-rooster-blue-earl-150x150.jpg" alt="Gnarly Red Rooster" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-626" /><br /><span itemprop="name">Gnarly Red Rooster</span></a></strong></p>
+				    	<div itemscope itemtype="http://schema.org/Product">
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/earls-malt-cider/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/08/earlsmaltcider-150x150.jpg" alt="Earl's Malt Cider" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">Earl's Malt Cider</span></a></strong></p>
 				        </div>
 				    </div>
 				</div><!-- /.row -->
 				<div class="row">
+					<div class="col-md-3 col-sm-6 text-center text-white">
+				     	<div itemscope itemtype="http://schema.org/Product">
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/four-corners-ale/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/four-corners-ale-blue-earl-150x150.jpg" alt="Four Corners Ale" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-619" /><br /><span itemprop="name">Four Corners Ale</span></a></strong></p>
+				        </div>
+				    </div>
+				    <div class="col-md-3 col-sm-6 text-center text-white">
+				    	<div itemscope itemtype="http://schema.org/Product">
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/gnarly-red-rooster/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/gnarly-red-rooster-blue-earl-150x150.jpg" alt="Gnarly Red Rooster" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-626" /><br /><span itemprop="name">Gnarly Red Rooster</span></a></strong></p>
+				        </div>
+				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
 				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/honeysuckle-rose/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/05/honeysuckle-rose-blue-earl-150x150.jpg" alt="Honeysuckle Rose -- Blue Earl" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-113" /><br /><span itemprop="name">Honeysuckle Rose</span></a></strong></p>
@@ -81,27 +91,56 @@ get_header(); ?>
 				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/life-is-good/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/life-is-good-blue-earl-150x150.jpg" alt="Life is Good" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-611" /><br /><span itemprop="name">Life is Good</span></a></strong></p>
 				        </div>
 				    </div>
-				    <div class="col-md-3 col-sm-6 text-center text-white">
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
 				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/lovelight-white/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/lovelight-white-blue-earl-150x150.jpg" alt="Lovelight White -- Bue Earl Brewery" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-518" /><br /><span itemprop="name">Lovelight White</span></a></strong></p>
 				    	</div>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
-				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/may-this-be-love/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/may-this-be-love-blue-earl-1-150x150.jpg" alt="May this be Love - Blue Earl" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-546" /><br /><span itemprop="name">May This be Love</span></a></strong></p>
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/marg-earl-rita/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/07/marg-earl-rita-150x150.jpg" alt="Marg-EARL-Rita - Blue Earl" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">Marg-EARL-Rita</span></a></strong></p>
 				        </div>
+				    </div>
+				    <div class="col-md-3 col-sm-6 text-center text-white">
+				    	<div itemscope itemtype="http://schema.org/Product">
+				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/may-this-be-love/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/may-this-be-love-blue-earl-1-150x150.jpg" alt="May this be Love - Blue Earl" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">May This be Love</span></a></strong></p>
+				        </div>
+				    </div>
+				    <div class="col-md-3 col-sm-6 text-center text-white">
+				    	<div itemscope itemtype="http://schema.org/Product">
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/more-than-a-feeling/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/more-than-a-feeling-blue-earl-150x150.jpg" alt="More Than a Feeling" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">More than a Feeling</span></a></strong></p>
+				    	</div>
 				    </div>
 				</div><!-- /.row -->
 				<div class="row">
-				    <div class="col-md-3 col-sm-6 text-center text-white">
+					<div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
-				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/more-than-a-feeling/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/more-than-a-feeling-blue-earl-150x150.jpg" alt="More Than a Feeling" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-607" /><br /><span itemprop="name">More than a Feeling</span></a></strong></p>
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/my-honey-bee/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/08/my-honey-bee-150x150.jpg" alt="More Than a Feeling" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">My Honey Bee</span></a></strong></p>
 				    	</div>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
 				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/raspberry-beret/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/raspberry-beret-blue-earl-150x150.jpg" alt="Raspberry Beret" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-630" /><br /><span itemprop="name">Raspberry Beret</span></a></strong></p>
 				        </div>
+				    </div>
+				    <div class="col-md-3 col-sm-6 text-center text-white">
+				    	<div itemscope itemtype="http://schema.org/Product">
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/she-squeezed-my-lemon/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/07/she-squeezed-my-lemon-blue-earl-150x150.jpg" alt="She Squeezed My Lemon" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-628" /><br /><span itemprop="name">She Squeezed My Lemon</span></a></strong></p>
+				    	</div>
+				    </div>
+				    <div class="col-md-3 col-sm-6 text-center text-white">
+				    	<div itemscope itemtype="http://schema.org/Product">
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/shining-star/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/08/shiningstar-150x150.jpg" alt="Shining Star" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">Shining Star</span></a></strong></p>
+				    	</div>
+				    </div>
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-md-3 col-sm-6 text-center text-white">
+						<div itemscope itemtype="http://schema.org/Product">
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/smooth-muthapukka/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/08/smooth-muthapukka-150x150.jpg" alt="Smooth Muthapukka" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">Smooth Muthapukka</span></a></strong></p>
+				    	</div>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
@@ -113,10 +152,15 @@ get_header(); ?>
 				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/top-of-the-world/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/top-of-the-world-blue-earl-150x150.jpg" alt="Top of the World" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-648" /><br /><span itemprop="name">Top of the World</span></a></strong></p>
 				        </div>
 				    </div>
-				</div><!-- /.row -->
-				<div class="row">
-				    <div class="col-md-3 col-sm-6 text-center text-white">
+					<div class="col-md-3 col-sm-6 text-center text-white">
 				    	<div itemscope itemtype="http://schema.org/Product">
+				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/train-kept-a-rollin/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/08/trainrollin-150x150.jpg" alt="Train Kept a Rollin'" width="150" height="150" class="img-thumbnail alignnone size-thumbnail" /><br /><span itemprop="name">Train Kept a Rollin'</span></a></strong></p>
+				    	</div>
+				    </div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 text-center text-white">
+				     	<div itemscope itemtype="http://schema.org/Product">
 				    		<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/trouble-in-mind/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/trouble-in-mind-blue-earl-1-150x150.jpg" alt="Trouble In Mind -- Blue Earl Beer" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-525" /><br /><span itemprop="name">Trouble in Mind</span></a></strong></p>
 				    	</div>
 				    </div>
@@ -131,11 +175,11 @@ get_header(); ?>
 				    	</div>
 				    </div>
 				    <div class="col-md-3 col-sm-6 text-center text-white">
-				     	<div itemscope itemtype="http://schema.org/Product">
+				    	<div itemscope itemtype="http://schema.org/Product">
 				        	<p><strong><a itemprop="url" href="https://blueearlbrewing.com/blue-earl-beer/white-table-181/"><img itemprop="image" src="https://blueearlbrewing.com/wp-content/uploads/2018/06/white-table-181-blue-earl-150x150.jpg" alt="White Table 181 - Beer/Wine Hybrid" width="150" height="150" class="img-thumbnail alignnone size-thumbnail wp-image-614" /><br /><span itemprop="name">White Table 181</span></a></strong></p>
 				        </div>
 				    </div>
-				</div><!-- /.row -->
+				</div>
 				<p class="text-center"><a class="btn btn-warning" href="/blue-earl-brewing/on-tap-at-blue-earl-brewery/">View "On Tap" Selections</a></p>
 				&nbsp;
 				<h2 class="text-center text-white mb-5">Limited Release Bottles:</h2>
