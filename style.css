@@ -168,6 +168,19 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
 }
+.featured-event {
+min-height: 303px;
+width: 100%;
+display: block;
+background: #324158;
+border-bottom: 4px solid #dec328;
+}
+.event-details {
+background: #e9e9e9;
+min-height: 302px;
+padding: 10px;
+margin-top: -3px;
+}
 /* ============= Events Made Easy ============= */
 .prev-month {
 padding-right: .7em;

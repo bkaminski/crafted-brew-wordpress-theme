@@ -2,6 +2,7 @@
 	<div id="preloader">
 		<p class="text-center h5 loadtext">Blue Earl is loading...</p>
 	</div>
+
 	<header>
 		<div class="container-fluid no-padding header-content">
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/blue-earl-brewing.png" class="blue-earl-logo img-fluid mx-auto d-block" alt="Blue Earl Brewing Company" />
@@ -11,6 +12,24 @@
 			</video>
 		</div>
 	</header>
+	<section>
+		<div class="container-fluid featured-event pt-3 pb-3">
+			<div class="container mb-3">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center text-white pb-3"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=7]'); ?></h2>
+					</div>
+					<div class="col-md-6">
+						<p class="shadow text-center"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=4]'); ?></p>
+					</div>
+					<div class="col-md-6">
+						<div class="shadow event-details"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=6]'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section>
 		<div class="container-fluid book-tour">
 			<div class="container">
@@ -68,6 +87,5 @@
 				</div>
 			</div>
 		</div>
-		<?php include get_template_directory() . '/lib/inc/event-modal.php'; ?>
 	</aside>
 <?php get_footer(); ?>

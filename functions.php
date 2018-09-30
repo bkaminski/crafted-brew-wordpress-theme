@@ -235,16 +235,6 @@ function my_login_logo() { ?>
             font-weight: bold;
             color: white;
         }
-        label[for=user_pass]:before {
-            content: "\f023 \2002";
-            font-family: "Font Awesome 5 Free";
-            color: #999;
-        }
-        label[for=user_login]:before {
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 400;
-            content: "\f2c1 \2002";
-        }
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
@@ -303,8 +293,27 @@ function craftedBrew_Favicon() {
  add_action( 'login_head', 'craftedBrew_Favicon' );
  add_action( 'admin_head', 'craftedBrew_Favicon' );
 
-function blueEarl_admin_enqueue_script() {
-  wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.1.0/js/all.js', false, null, null, false);
+ function register_custom_menu_page() {
+    add_menu_page('Blue Earl Training Videos', 'Training Videos', 'add_users', 'blueEarl_training_vids', '_custom_menu_page', 'dashicons-video-alt3', 50); 
+}
+add_action('admin_menu', 'register_custom_menu_page');
+
+//Training videos
+function _custom_menu_page(){
+   echo "
+   	<h1>Blue Earl Training Videos</h1><br />
+   	<p>If you would like to request a tutorial video, <a href='mailto:ben@benkaminski.com'>contact Ben here</a></p>
+   	<h3>Video 1: Events Made Easy</h3>
+   	<video id='eventsMadeEasy' poster='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/eme-training.png' width='640' height='360' src='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/eventsMadeEasy.mp4' controls='controls' preload='none'></video>
+   	<br />
+   	<br />
+   	<hr style='border-top:3px solid'>
+   	<h3>Video 2: Store Locator</h3>
+	<video id='soreLocator' poster='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/store-locator.png' width='640' height='360' src='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/store-locator.mp4' controls='controls' preload='none'></video>
+   	<br />
+   	<br />
+   	<hr style='border-top:3px solid'>
+   
+   ";  
 }
 
-add_action( 'login_enqueue_scripts', 'blueEarl_admin_enqueue_script', 1 );
