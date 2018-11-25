@@ -169,17 +169,6 @@ background-position: center center;
 background-size: cover;
 }
 .featured-event {
-<<<<<<< HEAD
-min-height: 346px;
-width: 100%;
-display: block;
-background: #324158;
-}
-.event-details {
-background: #ccc;
-min-height: 346px;
-padding: 10px;
-=======
 min-height: 303px;
 width: 100%;
 display: block;
@@ -188,10 +177,9 @@ border-bottom: 4px solid #dec328;
 }
 .event-details {
 background: #e9e9e9;
-min-height: 302px;
+min-height: 303px;
 padding: 10px;
-margin-top: -3px;
->>>>>>> 5dd4afdcd0392fd082ed3f7ce14f4fec403520f9
+margin-top: -1px;
 }
 /* ============= Events Made Easy ============= */
 .prev-month {
@@ -348,7 +336,6 @@ color: #dec328;
 min-height: 100px;
 padding: 10px;
 border-bottom: 4px solid #dec328;
-border-top: 4px solid #dec328;
 background: #0c5282;
 }
 .hamburger {
@@ -580,8 +567,8 @@ background-repeat: no-repeat;
 background: transparent;
 }
 .navbar-expand-md .navbar-nav .nav-link {
-padding-right: .5rem;
-padding-left: .5rem;
+padding-right: .35rem;
+padding-left: .35rem;
 }
 .pf-1 {
 font-size: 1.0rem;
@@ -635,13 +622,13 @@ margin-top: 0em;
 margin-top: 45%;
 }
 .navbar-expand-md .navbar-nav .nav-link {
-padding-right: 2rem;
-padding-left: 2rem;
+padding-right: 1rem;
+padding-left: 1.5rem;
 }}
 @media (min-width:1200px) {
 .navbar-expand-md .navbar-nav .nav-link {
-padding-right: 2.5rem;
-padding-left: 2.5rem;
+padding-right: 1.5rem;
+padding-left: 1.5rem;
 font-size: 1.2rem;
 }
 .loadtext

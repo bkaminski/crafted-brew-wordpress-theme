@@ -306,9 +306,17 @@ function _custom_menu_page(){
    	<h3>Video 1: Events Made Easy</h3>
    	<video id='eventsMadeEasy' poster='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/eme-training.png' width='640' height='360' src='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/eventsMadeEasy.mp4' controls='controls' preload='none'></video>
    	<br />
+   	<h3 style='color:#ff0000;'>VERY IMPORTANT!</h3>
+   	<p><strong>Use the FEATURED IMAGE for all event images. Do not click the add-media button! This will cause errors with the programming of the featured events on the home page.<br />
+   	<img src='https://blueearlbrewing.com/wp-content/uploads/2018/10/featured-image.png'></strong></p>
    	<br />
    	<hr style='border-top:3px solid'>
-   	<h3>Video 2: Store Locator</h3>
+   	<h3>Video 2: Featured Home Page Events</h3>
+   	<video id='featuredEvents' poster='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/featured-event.png' width='640' height='360' src='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/featured-events.mp4' controls='controls' preload='none'></video>
+   	<br />
+   	<br />
+   	<hr style='border-top:3px solid'>
+   	<h3>Video 3: Store Locator</h3>
 	<video id='soreLocator' poster='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/store-locator.png' width='640' height='360' src='https://blueearlbrewing.com/wp-content/themes/crafted-brew-wordpress-theme/lib/vids/store-locator.mp4' controls='controls' preload='none'></video>
    	<br />
    	<br />
