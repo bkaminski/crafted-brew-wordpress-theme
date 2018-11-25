@@ -168,6 +168,17 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
 }
+.featured-event {
+min-height: 346px;
+width: 100%;
+display: block;
+background: #324158;
+}
+.event-details {
+background: #ccc;
+min-height: 346px;
+padding: 10px;
+}
 /* ============= Events Made Easy ============= */
 .prev-month {
 padding-right: .7em;
@@ -323,6 +334,7 @@ color: #dec328;
 min-height: 100px;
 padding: 10px;
 border-bottom: 4px solid #dec328;
+border-top: 4px solid #dec328;
 background: #0c5282;
 }
 .hamburger {

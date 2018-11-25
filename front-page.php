@@ -13,6 +13,21 @@
 		</div>
 	</header>
 	<section>
+		<div class="container-fluid featured-event pt-3 pb-3">
+			<div class="container">
+				<h2 class="text-center alert alert-dark"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=3]'); ?></h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="shadow text-center"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=1]'); ?></p>
+					</div>
+					<div class="col-md-6">
+						<p class="event-details"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=2]'); ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
 		<div class="container-fluid book-tour">
 			<div class="container">
 				<div class="row">
@@ -31,20 +46,78 @@
 			<?php include get_template_directory() . '/lib/inc/blue-earl-carousel.php'; ?>
 		</div>
 	</main>
-	<section>
-		<div class="container-fluid book-tour">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9">
-						<h6 class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</h6>
-					</div>
-					<div class="col-md-3">
-						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="/blue-earl-brewing/brewery-tours/">Book Tour</a>
-					</div>
-				</div>
-			</div>	
+	<!-- <section>
+		<div class="col-md-12">
+			<h4 class="text-center mt-4 mb-4">Social Media</h4>
 		</div>
-	</section>
+		<div class="card-group">
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+		<div class="card-group">
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="" alt="">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<h4 class="text-center mt-4 mb-4">Social Media</h4>
+		</div>
+	</section> -->
 	<aside>
 		<div class="container-fluid no-padding testimonail-outer">
 			<div class="container">
@@ -69,6 +142,19 @@
 				</div>
 			</div>
 		</div>
-		<?php include get_template_directory() . '/lib/inc/event-modal.php'; ?>
 	</aside>
+	<section>
+		<div class="container-fluid book-tour">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h6 class="gold-text pt-3 text-uppercase pf-1">Book your next brewery tour now by calling 302.653.BEER</h6>
+					</div>
+					<div class="col-md-3">
+						<a class="ml-3 btn btn-lg btn-warning mt-3 mb-3 btn-1 text-uppercase" href="/blue-earl-brewing/brewery-tours/">Book Tour</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
 <?php get_footer(); ?>
