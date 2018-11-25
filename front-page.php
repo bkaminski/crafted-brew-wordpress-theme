@@ -14,6 +14,7 @@
 	</header>
 	<section>
 		<div class="container-fluid featured-event pt-3 pb-3">
+<<<<<<< HEAD
 			<div class="container">
 				<h2 class="text-center alert alert-dark"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=3]'); ?></h2>
 				<div class="row">
@@ -22,6 +23,19 @@
 					</div>
 					<div class="col-md-6">
 						<p class="event-details"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=2]'); ?></p>
+=======
+			<div class="container mb-3">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center text-white pb-3"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=7]'); ?></h2>
+					</div>
+					<div class="col-md-6">
+						<p class="shadow text-center"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=4]'); ?></p>
+					</div>
+					<div class="col-md-6">
+						<div class="shadow event-details"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=6]'); ?>
+						</div>
+>>>>>>> 5dd4afdcd0392fd082ed3f7ce14f4fec403520f9
 					</div>
 				</div>
 			</div>
