@@ -13,11 +13,11 @@
 		</div>
 	</header>
 	<section>
-		<div class="container-fluid featured-event pt-3 pb-3">
+		<div id="featuredEvent" class="container-fluid featured-event pt-3 pb-3">
 			<div class="container mb-3">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="text-center text-white pb-3"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=7]'); ?></h2>
+						<h2 class="text-center text-white pb-3 eventTitle"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=7]'); ?></h2>
 					</div>
 					<div class="col-md-6">
 						<p class="shadow text-center"><?php echo do_shortcode('[eme_events category=3 limit=1 template_id=4]'); ?></p>
